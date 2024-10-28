@@ -3,6 +3,7 @@ using UnityEngine;
 public class Player2Controller : MonoBehaviour
 {
     public float speed = 10f; // Movement speed of Player 2
+    public float bounceForce = 100f; // Adjust this for desired bounce strength
     private Rigidbody rb;
 
     void Start()
@@ -32,6 +33,17 @@ public class Player2Controller : MonoBehaviour
         {
             // Gradually reduce velocity when no input is given
             rb.velocity = new Vector3(rb.velocity.x * 0.98f, rb.velocity.y, rb.velocity.z * 0.98f);
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        // Check if the collision is with another player
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Get the direction of the collision and apply a bounce force
+            Vector3 bounceDirection = collision.contacts[0].normal;
+            rb.AddForce(bounceDirection * bounceForce, ForceMode.Impulse);
         }
     }
 }

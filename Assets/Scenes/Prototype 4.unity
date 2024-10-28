@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 200938647}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
+  bounceForce: 10
 --- !u!54 &200938648
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1071,7 +1072,7 @@ GameObject:
   - component: {fileID: 1864343797}
   m_Layer: 0
   m_Name: Player1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1202,6 +1203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
+  bounceForce: 10
 --- !u!1001 &1974533475
 PrefabInstance:
   m_ObjectHideFlags: 0

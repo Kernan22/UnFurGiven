@@ -2,38 +2,41 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
-    public float speed = 10f; // Movement speed of the ball
-
+    public float speed = 10f; // Movement speed
+    public float bounceForce = 100f; // Adjust this for desired bounce strength
     private Rigidbody rb;
 
     void Start()
     {
-        // Get the Rigidbody component attached to the ball
         rb = GetComponent<Rigidbody>();
     }
-    
-  void Update()
-  {
-      // Get input from the arrow keys
-      float horizontal = Input.GetAxis("Horizontal");
-      float vertical = Input.GetAxis("Vertical");
-  
-      // Only apply force if there is input
-      if (horizontal != 0 || vertical != 0)
-      {
-          Vector3 movement = new Vector3(horizontal, 0, vertical).normalized * speed;
-          rb.AddForce(movement, ForceMode.Acceleration);
-      }
-      else
-      {
-          // Slightly reduce velocity when no input is given to avoid stopping too quickly
-          rb.velocity = new Vector3(rb.velocity.x * 0.98f, rb.velocity.y, rb.velocity.z * 0.98f);
-      }
-  }
 
-   }
+    void Update()
+    {
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
 
+        if (horizontal != 0 || vertical != 0)
+        {
+            Vector3 movement = new Vector3(horizontal, 0, vertical).normalized * speed;
+            rb.AddForce(movement, ForceMode.Acceleration);
+        }
+        else
+        {
+            rb.velocity = new Vector3(rb.velocity.x * 0.98f, rb.velocity.y, rb.velocity.z * 0.98f);
+        }
+    }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        // Check if the collision is with another player
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Vector3 bounceDirection = collision.contacts[0].normal;
+            rb.AddForce(bounceDirection * bounceForce, ForceMode.Impulse);
+        }
+    }
+}
 
 
 

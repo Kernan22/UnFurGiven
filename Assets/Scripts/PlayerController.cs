@@ -12,37 +12,52 @@ public class PlayerController : MonoBehaviour
 
     private bool isGrounded;
 
+    public Transform cameraTransform; // Reference to the camera's transform
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        if (cameraTransform == null)
+        {
+            cameraTransform = Camera.main.transform; // Ensure each player has their own camera if doing splitscreen
+        }
     }
 
-    void OnMove(InputValue movementValue)
+    public void OnMove(InputValue movementValue)
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
         movementX = movementVector.x;
         movementY = movementVector.y;
     }
 
-    void OnJump(InputValue jumpValue)
+    public void OnJump(InputValue jumpValue)
     {
-        if (isGrounded) // Only allow jumping if grounded
+        if (isGrounded)
         {
             rb.AddForce(Vector3.up * hop, ForceMode.Impulse);
-            isGrounded = false; // Set to false to prevent multiple jumps
+            isGrounded = false;
         }
     }
 
     void FixedUpdate()
     {
-        Vector3 movement = new Vector3(movementX, 0.0f, movementY);
+        Vector3 camForward = cameraTransform.forward;
+        Vector3 camRight = cameraTransform.right;
+
+        camForward.y = 0;
+        camRight.y = 0;
+
+        camForward.Normalize();
+        camRight.Normalize();
+
+        Vector3 movement = camForward * movementY + camRight * movementX;
         rb.AddForce(movement * speed);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Check if the ball is touching the ground
-        if (collision.gameObject.CompareTag("Ground")) // Ensure the ground has a "Ground" tag
+        if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
         }

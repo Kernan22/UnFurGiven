@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 17
+  controlID: 25
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 48
+  controlID: 108
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 49
+  controlID: 73
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -245,8 +245,8 @@ MonoBehaviour:
     y: 0
     width: 394
     height: 939
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -405,14 +405,14 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Pkern\REPOS\UnFurGiven
+  m_LastProjectPath: C:\Users\Pkern\REPOS\UnFurGiven\UnFurGiven
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e66f0000
     m_LastClickedID: 28646
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000d0610000d2610000d4610000d6610000d8610000da610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -440,21 +440,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000521e0000ca5900005a5c0000cc63000066690000d66a0000
+    m_ExpandedIDs: ffffffff00000000d0610000d2610000d4610000d6610000d8610000da61000020620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Prototype 4
-      m_OriginalName: Prototype 4
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 27392
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 12}
     m_SearchString: 
@@ -924,9 +924,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.9832864, y: -15.440422, z: 20.275032}
+    m_Target: {x: -24.613262, y: -12.660248, z: 31.86106}
     speed: 2
-    m_Value: {x: -5.9832864, y: -15.440422, z: 20.275032}
+    m_Value: {x: -24.613262, y: -12.660248, z: 31.86106}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -972,13 +972,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.25062206, y: -0.059496906, z: 0.015438475, w: 0.9661507}
+    m_Target: {x: 0.23390208, y: -0.17962365, z: 0.04401888, w: 0.9545319}
     speed: 2
-    m_Value: {x: 0.25061747, y: -0.059495814, z: 0.015438192, w: 0.96613294}
+    m_Value: {x: 0.23389699, y: -0.17961973, z: 0.04401792, w: 0.9545111}
   m_Size:
-    m_Target: 26.59257
+    m_Target: 31.712133
     speed: 2
-    m_Value: 26.59257
+    m_Value: 31.712133
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1039,10 +1039,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 2301}
-      m_SelectedIDs: 8e46ffff
-      m_LastClickedID: -47474
-      m_ExpandedIDs: 524cffff5653ffff6653ffff767effff947fffff968afffff08bffffe493ffff5495ffff6ebdffff16fbffff486c0000186d0000e6720000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 50120000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 82f0ffff0cfbffffe4590000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

@@ -11,6 +11,8 @@ public class CountdownTimer : MonoBehaviour
     public GameObject player1; // Reference to Player 1 GameObject
     public GameObject player2; // Reference to Player 2 GameObject
 
+    public PowerupSpawner powerupSpawner; // Reference to the PowerupSpawner
+
     private Rigidbody player1Rb;
     private Rigidbody player2Rb;
 
@@ -50,5 +52,8 @@ public class CountdownTimer : MonoBehaviour
 
         // Start the game timer after the countdown
         FindObjectOfType<GameTimer>().StartGameTimer();
+
+        // Start the power-up spawner after the countdown
+        powerupSpawner.StartSpawning(); // Added this line
     }
 }

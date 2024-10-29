@@ -7,11 +7,12 @@
     <list default="true" id="9cce4f8d-1736-41cc-8cde-f39ddb8099d6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnFurGiven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnFurGiven/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/BallBounceController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/BallBounceController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CountdownTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CountdownTimer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/23/2378cdc5a490788969e646cfe72f5a6e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6b/6b43f633a703f661d095aeca22a636d1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d4/d476dc0367345169dc3483201c25b8aa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e8/e839f65fcbf2e075df33f2f95126ec7f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ce/ce989c1a78405e64b2ea479147561d91" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE-inputdata.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE-inputdata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag.json" afterDir="false" />
@@ -34,6 +35,7 @@
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Search/transactions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Search/transactions.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/f0/f03edde78fac000b6787b209d4726b66.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/f0/f03edde78fac000b6787b209d4726b66.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/67/67aed9ce556c25f842507e58fe332337.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/67/67aed9ce556c25f842507e58fe332337.json" afterDir="false" />
@@ -45,6 +47,7 @@
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +180,21 @@
       <workItem from="1730202555513" duration="55000" />
       <workItem from="1730202636009" duration="72000" />
       <workItem from="1730203372398" duration="69000" />
+      <workItem from="1730204156528" duration="101000" />
+      <workItem from="1730204458901" duration="1000" />
+      <workItem from="1730205394076" duration="160000" />
+      <workItem from="1730205630081" duration="85000" />
+      <workItem from="1730205760674" duration="260000" />
+      <workItem from="1730206076377" duration="26000" />
+      <workItem from="1730206332221" duration="35000" />
+      <workItem from="1730206538864" duration="38000" />
+      <workItem from="1730206641296" duration="39000" />
+      <workItem from="1730207081745" duration="78000" />
+      <workItem from="1730209322703" duration="32000" />
+      <workItem from="1730209642530" duration="157000" />
+      <workItem from="1730210540680" duration="10000" />
+      <workItem from="1730211079426" duration="310000" />
+      <workItem from="1730211728700" duration="42000" />
     </task>
     <servers />
   </component>

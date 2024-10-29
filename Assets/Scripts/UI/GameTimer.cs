@@ -10,7 +10,7 @@ public class GameTimer : MonoBehaviour
     public TextMeshProUGUI endGameMessage; // Text for displaying "Draw" message
 
     private bool isGameEnded = false;
-    private bool gameHasStarted = false; // New flag to track if game has started
+    private bool gameHasStarted = false; //Flag to track if game has started
 
     private void Start()
     {
@@ -33,7 +33,7 @@ public class GameTimer : MonoBehaviour
         }
     }
 
-    // Method to start the game timer after the countdown ends
+    // Starting the game timer after the countdown ends
     public void StartGameTimer()
     {
         gameHasStarted = true;
@@ -57,7 +57,7 @@ public class GameTimer : MonoBehaviour
     public void Quit()
     {
         Time.timeScale = 1f; // Unfreeze the game
-        // Load the main menu or quit the application
+        // Load the main menu
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
 }

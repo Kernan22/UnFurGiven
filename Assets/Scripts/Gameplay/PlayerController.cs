@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     public bool hasPowerup;
 
-    public Transform cameraTransform; // Reference to the camera's transform
+    public Transform cameraTransform; 
 
     // Power-up settings
     public float powerupScaleMultiplier = 1.5f; // Scale factor for the power-up effect
@@ -27,10 +27,10 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-
+        // For Splitscreen
         if (cameraTransform == null)
         {
-            cameraTransform = Camera.main.transform; // Ensure each player has their own camera if doing splitscreen
+            cameraTransform = Camera.main.transform; 
         }
 
         // Save original scale and mass
@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputValue jumpValue)
     {
+        // Make sure the players can only jump if they're on the ground
         if (isGrounded)
         {
             rb.AddForce(Vector3.up * hop, ForceMode.Impulse);

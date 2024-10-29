@@ -54,6 +54,6 @@ public class CountdownTimer : MonoBehaviour
         FindObjectOfType<GameTimer>().StartGameTimer();
 
         // Start the power-up spawner after the countdown
-        powerupSpawner.StartSpawning(); // Added this line
+        powerupSpawner.StartSpawning(); 
     }
 }

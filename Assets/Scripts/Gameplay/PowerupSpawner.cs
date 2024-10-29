@@ -3,9 +3,9 @@ using System.Collections;
 
 public class PowerupSpawner : MonoBehaviour
 {
-    public GameObject powerupPrefab; // Reference to the power-up prefab
-    public float spawnInterval = 15f; // Interval between spawns in seconds
-    public GameObject spawnPlane; // Reference to the invisible plane above the island
+    public GameObject powerupPrefab; // Reference to the powerup prefab
+    public float spawnInterval = 15f; // Powerup spawns after 15 seconds
+    public GameObject spawnPlane; // Reference to the powerup spawn plane
 
     public void StartSpawning()
     {
@@ -14,13 +14,13 @@ public class PowerupSpawner : MonoBehaviour
 
     private IEnumerator SpawnPowerupRoutine()
     {
-        Debug.Log("Starting Powerup Spawn Routine"); // Debug log to confirm coroutine starts
+        Debug.Log("Starting Powerup Spawn Routine"); // Debug log to confirm
 
         yield return new WaitForSeconds(spawnInterval);
 
         while (true)
         {
-            Debug.Log("Attempting to spawn power-up"); // Debug log to confirm spawning attempt
+            Debug.Log("Attempting to spawn power-up"); // Debug log to confirm spawning
 
             Collider planeCollider = spawnPlane.GetComponent<Collider>();
             Vector3 spawnPosition = GetRandomPointInBounds(planeCollider.bounds);

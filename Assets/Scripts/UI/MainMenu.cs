@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
     public void OpenOptions()
     {
         // Display options UI (TBA)
-        Debug.Log("Options Menu Opened"); // Placeholder for now
+        Debug.Log("Options Menu Opened"); 
     }
 
     public void QuitGame()

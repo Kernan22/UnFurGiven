@@ -6,8 +6,8 @@ public class GameOverManager : MonoBehaviour
 {
     public GameObject endGamePanel; // Panel with "Win" message and buttons
     public TextMeshProUGUI endGameMessage; // Text for displaying "Player X Wins" message
-    public GameObject player1; // Reference to Player 1 GameObject
-    public GameObject player2; // Reference to Player 2 GameObject
+    public GameObject player1; 
+    public GameObject player2; 
 
     private void Start()
     {

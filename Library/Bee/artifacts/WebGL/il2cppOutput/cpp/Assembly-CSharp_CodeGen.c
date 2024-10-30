@@ -106,6 +106,10 @@ extern void MainMenu_StartGame_m8FB75C50790940C87A983517C4C08F4159A8A7D0 (void);
 extern void MainMenu_OpenOptions_m31D8CA9044EFD6D9DAC1C2AB74DE38A15438AA69 (void);
 extern void MainMenu_QuitGame_mBF761274C14BD7341FE8C32A538D28343B63EDC4 (void);
 extern void MainMenu__ctor_m8209CEC1D907C87A96D777961F4D0536E6E948DD (void);
+extern void MainMenuController_Start_m26371D166488BA9A98CE757741C6B0A7503C2E9E (void);
+extern void MainMenuController_Update_mB0547EC4AC7DBCFFF9E66D2F793EBA4662EECF8F (void);
+extern void MainMenuController_ActivateControllers_m0DE6C1893688194BB0A8A4D0AE9664087D9E1F13 (void);
+extern void MainMenuController__ctor_m9727FC638FDF6BDF302E10C6351846B395013EA4 (void);
 extern void ChatController_OnEnable_m025CE203564D82A1CDCE5E5719DB07E29811D0B7 (void);
 extern void ChatController_OnDisable_mD49D03719CAEBB3F59F24A7FA8F4FD30C8B54E46 (void);
 extern void ChatController_AddToChatOutput_m9AB8FA8A32EA23F2E55795D8301ED0BF6A59F722 (void);
@@ -373,7 +377,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[367] = 
+static Il2CppMethodPointer s_methodPointers[371] = 
 {
 	InputActions_get_asset_mCE4AB365E8672F4439FA6C678DD9B7CA4A43CAFA,
 	InputActions__ctor_m3AA8AC187C4B24AB2A4161C280F33C366FF89B02,
@@ -475,6 +479,10 @@ static Il2CppMethodPointer s_methodPointers[367] =
 	MainMenu_OpenOptions_m31D8CA9044EFD6D9DAC1C2AB74DE38A15438AA69,
 	MainMenu_QuitGame_mBF761274C14BD7341FE8C32A538D28343B63EDC4,
 	MainMenu__ctor_m8209CEC1D907C87A96D777961F4D0536E6E948DD,
+	MainMenuController_Start_m26371D166488BA9A98CE757741C6B0A7503C2E9E,
+	MainMenuController_Update_mB0547EC4AC7DBCFFF9E66D2F793EBA4662EECF8F,
+	MainMenuController_ActivateControllers_m0DE6C1893688194BB0A8A4D0AE9664087D9E1F13,
+	MainMenuController__ctor_m9727FC638FDF6BDF302E10C6351846B395013EA4,
 	ChatController_OnEnable_m025CE203564D82A1CDCE5E5719DB07E29811D0B7,
 	ChatController_OnDisable_mD49D03719CAEBB3F59F24A7FA8F4FD30C8B54E46,
 	ChatController_AddToChatOutput_m9AB8FA8A32EA23F2E55795D8301ED0BF6A59F722,
@@ -794,7 +802,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[24] =
 	{ 0x0600002D, Player2Actions_RemoveCallbacks_m14C4F12560986B1203ECF07386E1D8063F8BE628_AdjustorThunk },
 	{ 0x0600002E, Player2Actions_SetCallbacks_mAE0DDEF40C8EA7844A1E9605EC5B015EB459704B_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[367] = 
+static const int32_t s_InvokerIndices[371] = 
 {
 	5837,
 	5949,
@@ -882,6 +890,10 @@ static const int32_t s_InvokerIndices[367] =
 	5949,
 	4718,
 	4718,
+	5949,
+	5949,
+	5949,
+	5949,
 	5949,
 	5949,
 	5949,
@@ -1168,7 +1180,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	367,
+	371,
 	s_methodPointers,
 	24,
 	s_adjustorThunks,

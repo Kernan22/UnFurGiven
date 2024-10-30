@@ -183,29 +183,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3362}
     - Class: 114
-      Script: {instanceID: 4072}
+      Script: {instanceID: 4074}
     - Class: 114
-      Script: {instanceID: 5250}
+      Script: {instanceID: 4406}
     - Class: 114
-      Script: {instanceID: 5390}
+      Script: {instanceID: 5262}
     - Class: 114
-      Script: {instanceID: 5670}
+      Script: {instanceID: 5402}
     - Class: 114
-      Script: {instanceID: 6160}
+      Script: {instanceID: 5684}
     - Class: 114
-      Script: {instanceID: 6278}
+      Script: {instanceID: 6176}
     - Class: 114
-      Script: {instanceID: 6310}
+      Script: {instanceID: 6296}
     - Class: 114
-      Script: {instanceID: 6506}
+      Script: {instanceID: 6328}
     - Class: 114
-      Script: {instanceID: 7296}
+      Script: {instanceID: 6526}
     - Class: 114
-      Script: {instanceID: 7554}
+      Script: {instanceID: 7322}
     - Class: 114
-      Script: {instanceID: 7826}
+      Script: {instanceID: 7582}
     - Class: 114
-      Script: {instanceID: 8082}
+      Script: {instanceID: 7856}
+    - Class: 114
+      Script: {instanceID: 8114}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -264,23 +266,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3362}
     - Class: 114
-      Script: {instanceID: 4072}
+      Script: {instanceID: 4074}
     - Class: 114
-      Script: {instanceID: 4410}
+      Script: {instanceID: 4416}
     - Class: 114
-      Script: {instanceID: 4534}
+      Script: {instanceID: 4540}
     - Class: 114
-      Script: {instanceID: 4832}
+      Script: {instanceID: 4844}
     - Class: 114
-      Script: {instanceID: 5670}
+      Script: {instanceID: 5684}
     - Class: 114
-      Script: {instanceID: 6310}
+      Script: {instanceID: 6328}
     - Class: 114
-      Script: {instanceID: 6506}
+      Script: {instanceID: 6526}
     - Class: 114
-      Script: {instanceID: 7296}
+      Script: {instanceID: 7322}
     - Class: 114
-      Script: {instanceID: 8082}
+      Script: {instanceID: 8114}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1846,6 +1848,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: d69dd7c5c5ca3f943106e776d50af919
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MainMenuController
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

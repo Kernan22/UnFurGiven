@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     public bool hasPowerup;
 
-    public Transform cameraTransform; 
+    public Transform cameraTransform;
 
     // Power-up settings
     public float powerupScaleMultiplier = 1.5f; // Scale factor for the power-up effect
@@ -24,18 +25,27 @@ public class PlayerController : MonoBehaviour
     private Vector3 originalScale;
     private float originalMass;
 
-    void Start()
+    // Speed modifier variables
+    public float baseSpeed = 10f; // Default movement speed
+    private float currentSpeed; // Speed after modifiers
+    private bool isSlowed = false; // Prevent overlapping slowdowns
+
+    private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        // For Splitscreen
+
+        // For splitscreen
         if (cameraTransform == null)
         {
-            cameraTransform = Camera.main.transform; 
+            cameraTransform = Camera.main.transform;
         }
 
         // Save original scale and mass
         originalScale = transform.localScale;
         originalMass = rb.mass;
+
+        // Initialize current speed
+        currentSpeed = baseSpeed;
     }
 
     public void OnMove(InputValue movementValue)
@@ -55,7 +65,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         Vector3 camForward = cameraTransform.forward;
         Vector3 camRight = cameraTransform.right;
@@ -67,7 +77,7 @@ public class PlayerController : MonoBehaviour
         camRight.Normalize();
 
         // Scale the speed based on mass to maintain similar control feel
-        float adjustedSpeed = speed * (rb.mass / originalMass);
+        float adjustedSpeed = currentSpeed * (rb.mass / originalMass);
 
         Vector3 movement = camForward * movementY + camRight * movementX;
         rb.AddForce(movement * adjustedSpeed);
@@ -117,5 +127,23 @@ public class PlayerController : MonoBehaviour
         hasPowerup = false;
         transform.localScale = originalScale;
         rb.mass = originalMass;
+    }
+
+    // Speed modifier functionality
+    public void ApplySpeedModifier(float multiplier, float duration)
+    {
+        if (!isSlowed) // Avoid overlapping effects
+        {
+            StartCoroutine(SpeedModifierCoroutine(multiplier, duration));
+        }
+    }
+
+    private IEnumerator SpeedModifierCoroutine(float multiplier, float duration)
+    {
+        isSlowed = true; // Prevent reapplication
+        currentSpeed = baseSpeed * multiplier; // Adjust speed
+        yield return new WaitForSeconds(duration); // Wait for the effect to wear off
+        currentSpeed = baseSpeed; // Reset speed
+        isSlowed = false; // Allow future slowdowns
     }
 }

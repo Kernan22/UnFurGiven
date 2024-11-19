@@ -1,36 +1,60 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 
 public class PowerupSpawner : MonoBehaviour
 {
-    public GameObject powerupPrefab; // Reference to the powerup prefab
-    public float spawnInterval = 15f; // Powerup spawns after 15 seconds
-    public GameObject spawnPlane; // Reference to the powerup spawn plane
+    public GameObject powerupPrefab; // Reference to the power-up prefab
+    public GameObject spawnPlane; // Reference to the power-up spawn plane
+    public AudioClip spawnSound; // Sound effect for power-up spawn
+    private AudioSource audioSource;
+
+    private bool hasSpawned = false; // Tracks whether the power-up has been spawned
+
+    private void Start()
+    {
+        // Add an AudioSource component if not already attached
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        // Configure the AudioSource
+        audioSource.volume = 0.7f; // Adjust the volume as needed
+        audioSource.playOnAwake = false; // Prevent unintended playback
+    }
 
     public void StartSpawning()
     {
-        StartCoroutine(SpawnPowerupRoutine());
+        // Calls the SpawnPowerup method to begin spawning
+        SpawnPowerup();
     }
 
-    private IEnumerator SpawnPowerupRoutine()
+    private void SpawnPowerup()
     {
-        Debug.Log("Starting Powerup Spawn Routine"); // Debug log to confirm
-
-        yield return new WaitForSeconds(spawnInterval);
-
-        while (true)
+        if (!hasSpawned)
         {
-            Debug.Log("Attempting to spawn power-up"); // Debug log to confirm spawning
-
             Collider planeCollider = spawnPlane.GetComponent<Collider>();
             Vector3 spawnPosition = GetRandomPointInBounds(planeCollider.bounds);
 
-            // Debug log to confirm spawn position
             Debug.Log("Spawning power-up at position: " + spawnPosition);
 
             Instantiate(powerupPrefab, spawnPosition, Quaternion.identity);
+            hasSpawned = true;
 
-            yield return new WaitForSeconds(spawnInterval);
+            // Play the spawn sound
+            if (audioSource != null && spawnSound != null)
+            {
+                audioSource.PlayOneShot(spawnSound);
+            }
+            else
+            {
+                Debug.LogWarning("AudioSource or spawnSound is missing!");
+            }
+        }
+        else
+        {
+            Debug.Log("Power-up has already been spawned, skipping.");
         }
     }
 
@@ -41,5 +65,5 @@ public class PowerupSpawner : MonoBehaviour
         float z = Random.Range(bounds.min.z, bounds.max.z);
         return new Vector3(x, y, z);
     }
-
 }
+

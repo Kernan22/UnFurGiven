@@ -4,48 +4,73 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-    public Rigidbody rb;
-    private float movementX;
-    private float movementY;
+    public float baseSpeed = 10f;
+    private float currentSpeed;
+    private bool isSlowed = false;
 
-    public float hop;
-    public float speed;
-
-    private bool isGrounded;
-    public bool hasPowerup;
+    public float jumpForce = 5f;
+    private bool isGrounded = false;
 
     public Transform cameraTransform;
 
-    // Power-up settings
-    public float powerupScaleMultiplier = 1.5f; // Scale factor for the power-up effect
-    public float powerupMassMultiplier = 2f; // Mass multiplier for harder knock-back
-    public float powerupDuration = 5f; // Duration of the power-up effect in seconds
-    public float bounceForce = 10f; // Additional force applied to the other player on collision when powered up
+    private Rigidbody rb;
+    private float movementX;
+    private float movementY;
 
+    // Power-up settings
+    public float powerupScaleMultiplier = 1.5f;
+    public float powerupMassMultiplier = 2f;
+    public float powerupDuration = 5f;
+    public AudioClip powerupSound;
+    [Range(0f, 1f)] public float powerupSoundVolume = 0.7f;
+
+    // Collision sound settings
+    public AudioClip collisionSound;
+    [Range(0f, 1f)] public float collisionSoundVolume = 0.7f;
+
+    public AudioClip treeCollisionSound;
+    [Range(0f, 1f)] public float treeCollisionSoundVolume = 0.7f;
+
+    public AudioClip rockCollisionSound;
+    [Range(0f, 1f)] public float rockCollisionSoundVolume = 0.7f;
+
+    public AudioClip groundCollisionSound; // Sound effect for hitting the ground
+    [Range(0f, 1f)] public float groundCollisionSoundVolume = 0.7f;
+
+    public AudioClip waterSplashSound; // Sound effect for landing in water
+    [Range(0f, 1f)] public float waterSplashSoundVolume = 0.7f;
+
+    public GameObject treeEffectPrefab; // Prefab for tree collision effect
+    public GameObject rockEffectPrefab; // Prefab for rock collision effect
+    public GameObject groundEffectPrefab; // Prefab for ground collision effect
+    public GameObject waterSplashEffectPrefab; // Prefab for water landing effect
+
+    private AudioSource audioSource;
     private Vector3 originalScale;
     private float originalMass;
-
-    // Speed modifier variables
-    public float baseSpeed = 10f; // Default movement speed
-    private float currentSpeed; // Speed after modifiers
-    private bool isSlowed = false; // Prevent overlapping slowdowns
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        currentSpeed = baseSpeed;
 
-        // For splitscreen
+        // Save the original scale and mass
+        originalScale = transform.localScale;
+        originalMass = rb.mass;
+
+        // Add an AudioSource if not already present
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        audioSource.spatialBlend = 1f;
+
         if (cameraTransform == null)
         {
             cameraTransform = Camera.main.transform;
         }
-
-        // Save original scale and mass
-        originalScale = transform.localScale;
-        originalMass = rb.mass;
-
-        // Initialize current speed
-        currentSpeed = baseSpeed;
     }
 
     public void OnMove(InputValue movementValue)
@@ -57,10 +82,9 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputValue jumpValue)
     {
-        // Make sure the players can only jump if they're on the ground
         if (isGrounded)
         {
-            rb.AddForce(Vector3.up * hop, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
         }
     }
@@ -76,63 +100,116 @@ public class PlayerController : MonoBehaviour
         camForward.Normalize();
         camRight.Normalize();
 
-        // Scale the speed based on mass to maintain similar control feel
-        float adjustedSpeed = currentSpeed * (rb.mass / originalMass);
+        // Maintain consistent movement control regardless of mass
+        Vector3 movement = (camForward * movementY + camRight * movementX).normalized;
 
-        Vector3 movement = camForward * movementY + camRight * movementX;
-        rb.AddForce(movement * adjustedSpeed);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
-
-        // Apply bounce force to other player if this player has power-up
-        if (hasPowerup && collision.gameObject.CompareTag("Player"))
-        {
-            Rigidbody otherRb = collision.gameObject.GetComponent<Rigidbody>();
-            if (otherRb != null)
-            {
-                // Calculate bounce direction from the collision point normal
-                Vector3 bounceDirection = collision.contacts[0].normal;
-                otherRb.AddForce(bounceDirection * bounceForce, ForceMode.Impulse);
-            }
-        }
+        // Scale force dynamically based on mass to keep the same responsiveness
+        float forceMultiplier = rb.mass / originalMass;
+        rb.AddForce(movement * currentSpeed * forceMultiplier, ForceMode.Force);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Powerup"))
+        // Handle water landing
+        if (other.CompareTag("Water"))
         {
-            hasPowerup = true;
-            Destroy(other.gameObject);
+            // Play water splash sound
+            if (waterSplashSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(waterSplashSound, waterSplashSoundVolume);
+            }
+
+            // Instantiate water splash effect
+            if (waterSplashEffectPrefab != null)
+            {
+                Instantiate(waterSplashEffectPrefab, transform.position, Quaternion.identity);
+            }
+
+            Debug.Log("Player landed in water!");
+        }
+
+        // Handle power-up pickups
+        if (other.CompareTag("Powerup"))
+        {
             ApplyPowerup();
-            Invoke(nameof(RemovePowerup), powerupDuration); // Remove power-up after duration
+            Destroy(other.gameObject);
+
+            if (powerupSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(powerupSound, powerupSoundVolume);
+            }
+
+            Invoke(nameof(RemovePowerup), powerupDuration);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        // Handle ground collisions
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+
+            if (groundCollisionSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(groundCollisionSound, groundCollisionSoundVolume);
+            }
+
+            if (groundEffectPrefab != null)
+            {
+                Instantiate(groundEffectPrefab, collision.contacts[0].point, Quaternion.identity);
+            }
+        }
+
+        // Handle tree collisions
+        if (collision.gameObject.CompareTag("Tree"))
+        {
+            if (treeCollisionSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(treeCollisionSound, treeCollisionSoundVolume);
+            }
+
+            if (treeEffectPrefab != null)
+            {
+                Instantiate(treeEffectPrefab, collision.contacts[0].point, Quaternion.identity);
+            }
+        }
+
+        // Handle rock collisions
+        if (collision.gameObject.CompareTag("Rock"))
+        {
+            if (rockCollisionSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(rockCollisionSound, rockCollisionSoundVolume);
+            }
+
+            if (rockEffectPrefab != null)
+            {
+                Instantiate(rockEffectPrefab, collision.contacts[0].point, Quaternion.identity);
+            }
         }
     }
 
     private void ApplyPowerup()
     {
-        // Increase player scale and mass
+        // Increase size and mass
         transform.localScale = originalScale * powerupScaleMultiplier;
         rb.mass = originalMass * powerupMassMultiplier;
+
+        // Keep the speed consistent regardless of mass
+        currentSpeed = baseSpeed;
     }
 
     private void RemovePowerup()
     {
-        // Reset player scale and mass to original values
-        hasPowerup = false;
         transform.localScale = originalScale;
         rb.mass = originalMass;
+        currentSpeed = baseSpeed;
     }
 
-    // Speed modifier functionality
     public void ApplySpeedModifier(float multiplier, float duration)
     {
-        if (!isSlowed) // Avoid overlapping effects
+        if (!isSlowed)
         {
             StartCoroutine(SpeedModifierCoroutine(multiplier, duration));
         }
@@ -140,10 +217,10 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator SpeedModifierCoroutine(float multiplier, float duration)
     {
-        isSlowed = true; // Prevent reapplication
-        currentSpeed = baseSpeed * multiplier; // Adjust speed
-        yield return new WaitForSeconds(duration); // Wait for the effect to wear off
-        currentSpeed = baseSpeed; // Reset speed
-        isSlowed = false; // Allow future slowdowns
+        isSlowed = true;
+        currentSpeed = baseSpeed * multiplier;
+        yield return new WaitForSeconds(duration);
+        currentSpeed = baseSpeed;
+        isSlowed = false;
     }
 }

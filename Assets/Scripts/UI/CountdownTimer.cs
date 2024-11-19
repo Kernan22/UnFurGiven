@@ -1,24 +1,24 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using TMPro; // Import TextMeshPro namespace
+using TMPro;
 
 public class CountdownTimer : MonoBehaviour
 {
     public int countdownTime = 3; // Number of seconds to count down
-    public TextMeshProUGUI countdownDisplay; // Use TextMeshProUGUI for TextMeshPro
+    public TextMeshProUGUI countdownDisplay;
 
-    public GameObject player1; // Reference to Player 1 GameObject
-    public GameObject player2; // Reference to Player 2 GameObject
+    public GameObject player1;
+    public GameObject player2;
 
-    public PowerupSpawner powerupSpawner; // Reference to the PowerupSpawner
+    public PowerupSpawner powerupSpawner;
+    public BackgroundMusicController backgroundMusicController; // Reference to the music controller
 
     private Rigidbody player1Rb;
     private Rigidbody player2Rb;
 
     private void Start()
     {
-        // Get the Rigidbody components for both players
         player1Rb = player1.GetComponent<Rigidbody>();
         player2Rb = player2.GetComponent<Rigidbody>();
 
@@ -35,16 +35,22 @@ public class CountdownTimer : MonoBehaviour
 
         while (countdownTime > 0)
         {
-            countdownDisplay.text = countdownTime.ToString(); // Show the countdown
-            yield return new WaitForSeconds(1f); // Wait for one second
-            countdownTime--; // Decrease the countdown
+            countdownDisplay.text = countdownTime.ToString();
+            yield return new WaitForSeconds(1f);
+            countdownTime--;
         }
 
-        countdownDisplay.text = "GO!"; // Display "GO!" at the end of the countdown
-        yield return new WaitForSeconds(1f); // Show "GO!" for a short time
-        countdownDisplay.gameObject.SetActive(false); // Hide the countdown display
+        countdownDisplay.text = "GO!";
+        yield return new WaitForSeconds(1f);
+        countdownDisplay.gameObject.SetActive(false);
 
-        // Enable player controls and unfreeze physics after the countdown
+        // Start the background music after the countdown ends
+        if (backgroundMusicController != null)
+        {
+            backgroundMusicController.StartMusic();
+        }
+
+        // Enable player controls and unfreeze physics
         player1.GetComponent<PlayerController>().enabled = true;
         player2.GetComponent<PlayerController>().enabled = true;
         player1Rb.isKinematic = false;
@@ -53,7 +59,28 @@ public class CountdownTimer : MonoBehaviour
         // Start the game timer after the countdown
         FindObjectOfType<GameTimer>().StartGameTimer();
 
-        // Start the power-up spawner after the countdown
-        powerupSpawner.StartSpawning(); 
+        // Delay the power-up spawner by 10 seconds after the countdown
+        if (powerupSpawner != null)
+        {
+            StartCoroutine(DelayPowerupSpawner(10f));
+        }
+    }
+
+    IEnumerator DelayPowerupSpawner(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        powerupSpawner.StartSpawning();
+    }
+
+    public void EndGame()
+    {
+        // Stop the background music when the game ends
+        if (backgroundMusicController != null)
+        {
+            backgroundMusicController.StopMusic();
+        }
+
+        Debug.Log("Game ended!");
     }
 }
+

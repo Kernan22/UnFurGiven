@@ -8,11 +8,14 @@ TagManager:
   - Player1
   - Player2
   - Powerup
+  - Tree
+  - Rock
+  - Water
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - Player1Layer

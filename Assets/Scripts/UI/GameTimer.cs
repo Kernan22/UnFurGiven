@@ -9,8 +9,10 @@ public class GameTimer : MonoBehaviour
     public GameObject endGamePanel; // Panel with "Draw" message and buttons
     public TextMeshProUGUI endGameMessage; // Text for displaying "Draw" message
 
+    public BackgroundMusicController backgroundMusicController; // Reference to the music controller
+
     private bool isGameEnded = false;
-    private bool gameHasStarted = false; //Flag to track if game has started
+    private bool gameHasStarted = false; // Flag to track if game has started
 
     private void Start()
     {
@@ -42,6 +44,13 @@ public class GameTimer : MonoBehaviour
     private void EndGame()
     {
         isGameEnded = true;
+
+        // Stop the background music
+        if (backgroundMusicController != null)
+        {
+            backgroundMusicController.StopMusic();
+        }
+
         Time.timeScale = 0f; // Freeze the game
         endGamePanel.SetActive(true); // Show the end game panel
         endGameMessage.text = "Draw!"; // Display "Draw" message

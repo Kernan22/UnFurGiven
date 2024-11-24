@@ -1,37 +1,42 @@
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 using TMPro;
 
 public class CountdownTimer : MonoBehaviour
 {
-    public int countdownTime = 3; // Number of seconds to count down
+    public int countdownTime = 3;
     public TextMeshProUGUI countdownDisplay;
 
     public GameObject player1;
     public GameObject player2;
 
-    public PowerupSpawner powerupSpawner;
-    public BackgroundMusicController backgroundMusicController; // Reference to the music controller
+    public GameOverManager gameOverManager;
 
     private Rigidbody player1Rb;
     private Rigidbody player2Rb;
 
     private void Start()
     {
+        InitializePlayers();
+        StartCoroutine(CountdownToStart());
+    }
+
+    private void InitializePlayers()
+    {
         player1Rb = player1.GetComponent<Rigidbody>();
         player2Rb = player2.GetComponent<Rigidbody>();
+    }
 
+    public void RestartCountdown()
+    {
+        countdownTime = 3; // Reset the countdown time
+        countdownDisplay.gameObject.SetActive(true); // Show the countdown UI
         StartCoroutine(CountdownToStart());
     }
 
     IEnumerator CountdownToStart()
     {
-        // Disable player controls and freeze physics at the start
-        player1.GetComponent<PlayerController>().enabled = false;
-        player2.GetComponent<PlayerController>().enabled = false;
-        player1Rb.isKinematic = true;
-        player2Rb.isKinematic = true;
+        DisablePlayerControls();
 
         while (countdownTime > 0)
         {
@@ -44,43 +49,23 @@ public class CountdownTimer : MonoBehaviour
         yield return new WaitForSeconds(1f);
         countdownDisplay.gameObject.SetActive(false);
 
-        // Start the background music after the countdown ends
-        if (backgroundMusicController != null)
-        {
-            backgroundMusicController.StartMusic();
-        }
+        EnablePlayerControls();
+        FindObjectOfType<GameTimer>().StartGameTimer();
+    }
 
-        // Enable player controls and unfreeze physics
+    private void DisablePlayerControls()
+    {
+        player1.GetComponent<PlayerController>().enabled = false;
+        player2.GetComponent<PlayerController>().enabled = false;
+        player1Rb.isKinematic = true;
+        player2Rb.isKinematic = true;
+    }
+
+    private void EnablePlayerControls()
+    {
         player1.GetComponent<PlayerController>().enabled = true;
         player2.GetComponent<PlayerController>().enabled = true;
         player1Rb.isKinematic = false;
         player2Rb.isKinematic = false;
-
-        // Start the game timer after the countdown
-        FindObjectOfType<GameTimer>().StartGameTimer();
-
-        // Delay the power-up spawner by 10 seconds after the countdown
-        if (powerupSpawner != null)
-        {
-            StartCoroutine(DelayPowerupSpawner(10f));
-        }
-    }
-
-    IEnumerator DelayPowerupSpawner(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        powerupSpawner.StartSpawning();
-    }
-
-    public void EndGame()
-    {
-        // Stop the background music when the game ends
-        if (backgroundMusicController != null)
-        {
-            backgroundMusicController.StopMusic();
-        }
-
-        Debug.Log("Game ended!");
     }
 }
-

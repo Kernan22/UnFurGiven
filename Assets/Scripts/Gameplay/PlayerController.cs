@@ -110,9 +110,14 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Handle water landing
         if (other.CompareTag("Water"))
         {
+            GameOverManager gameOverManager = FindObjectOfType<GameOverManager>();
+            if (gameOverManager != null)
+            {
+                gameOverManager.PlayerFallsInWater(gameObject.tag);
+            }
+
             // Play water splash sound
             if (waterSplashSound != null && audioSource != null)
             {
@@ -124,11 +129,8 @@ public class PlayerController : MonoBehaviour
             {
                 Instantiate(waterSplashEffectPrefab, transform.position, Quaternion.identity);
             }
-
-            Debug.Log("Player landed in water!");
         }
 
-        // Handle power-up pickups
         if (other.CompareTag("Powerup"))
         {
             ApplyPowerup();

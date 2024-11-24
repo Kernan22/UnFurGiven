@@ -1,71 +1,126 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameOverManager : MonoBehaviour
 {
-    public GameObject endGamePanel; // Panel with "Win" message and buttons
-    public TextMeshProUGUI endGameMessage; // Text for displaying "Player X Wins" message
-    public GameObject player1;
-    public GameObject player2;
+    public static int player1Score = 0; // Static variable to persist Player 1 score
+    public static int player2Score = 0; // Static variable to persist Player 2 score
+    public static int currentRound = 1; // Static variable to persist the current round
 
-    public BackgroundMusicController backgroundMusicController; // Reference to the music controller
+    public int winningScore = 2; // Number of wins required to win the match
+
+    public GameObject endGamePanel;
+    public TextMeshProUGUI endGameMessage;
+    public TextMeshProUGUI player1ScoreDisplay;
+    public TextMeshProUGUI player2ScoreDisplay;
+    public TextMeshProUGUI roundDisplay;
+
+    private bool isRoundActive = true;
 
     private void Start()
     {
-        endGamePanel.SetActive(false); // Hide the end game panel at the start
+        InitializeGame();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void InitializeGame()
     {
-        Debug.Log("OnTriggerEnter detected: " + other.tag);
+        // Update UI with the current scores and round
+        UpdateUI();
 
-        if (other.CompareTag("Player1"))
-        {
-            DisplayWinner("Player 2 Wins!");
-        }
-        else if (other.CompareTag("Player2"))
-        {
-            DisplayWinner("Player 1 Wins!");
-        }
+        // Hide the end game panel at the start
+        endGamePanel.SetActive(false);
+        isRoundActive = true;
     }
 
-    private void DisplayWinner(string message)
+    public void PlayerFallsInWater(string playerTag)
     {
-        // Stop the background music
-        if (backgroundMusicController != null)
+        if (!isRoundActive) return;
+
+        isRoundActive = false;
+
+        if (playerTag == "Player1")
         {
-            Debug.Log("Stopping music due to winner announcement...");
-            backgroundMusicController.StopMusic();
+            player2Score++;
+            Debug.Log("Player 1 fell into water. Player 2 scores!");
+        }
+        else if (playerTag == "Player2")
+        {
+            player1Score++;
+            Debug.Log("Player 2 fell into water. Player 1 scores!");
+        }
+
+        CheckForMatchEnd();
+    }
+
+    public void HandleRoundDraw()
+    {
+        if (!isRoundActive) return;
+
+        isRoundActive = false;
+        Debug.Log("Round ended in a draw.");
+        currentRound++; // Increment the round
+        RestartScene();
+    }
+
+    private void CheckForMatchEnd()
+    {
+        if (player1Score >= winningScore)
+        {
+            EndMatch("Player 1 Wins!");
+        }
+        else if (player2Score >= winningScore)
+        {
+            EndMatch("Player 2 Wins!");
         }
         else
         {
-            Debug.LogWarning("BackgroundMusicController not assigned in GameOverManager!");
+            currentRound++; // Increment the round number
+            RestartScene();
         }
+    }
 
-        // Fallback: Stop all AudioSources as a safety measure
-        AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
-        foreach (AudioSource source in allAudioSources)
-        {
-            source.Stop();
-        }
-
-        // Display the winning message and freeze the game
-        Time.timeScale = 0f;
+    private void EndMatch(string message)
+    {
+        Time.timeScale = 0f; // Pause the game
         endGameMessage.text = message;
         endGamePanel.SetActive(true);
     }
 
+    private void RestartScene()
+    {
+        UpdateUI(); // Ensure UI is up-to-date before reloading
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload the current scene
+    }
+
+    private void UpdateUI()
+    {
+        Debug.Log($"Updating UI: Player 1 Score: {player1Score}, Player 2 Score: {player2Score}, Round: {currentRound}");
+        player1ScoreDisplay.text = "Player 1 Score: " + player1Score;
+        player2ScoreDisplay.text = "Player 2 Score: " + player2Score;
+        roundDisplay.text = "Round " + currentRound;
+    }
 
     public void Rematch()
     {
-        Time.timeScale = 1f; // Unfreeze the game
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name); // Restart the scene
+        // Reset scores and rounds for a new match
+        player1Score = 0;
+        player2Score = 0;
+        currentRound = 1;
+
+        // Reload the scene
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void Quit()
     {
-        Time.timeScale = 1f; // Unfreeze the game
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu"); // Load the main menu
+        // Reset static variables for a fresh start
+        player1Score = 0;
+        player2Score = 0;
+        currentRound = 1;
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
     }
 }

@@ -1,7 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-
 
 public class BackgroundMusicController : MonoBehaviour
 {
@@ -27,7 +24,7 @@ public class BackgroundMusicController : MonoBehaviour
 
     public void StartMusic()
     {
-        if (audioSource != null && backgroundMusic != null)
+        if (audioSource != null && backgroundMusic != null && !audioSource.isPlaying)
         {
             audioSource.Play();
         }
@@ -35,7 +32,7 @@ public class BackgroundMusicController : MonoBehaviour
 
     public void StopMusic()
     {
-        if (audioSource != null)
+        if (audioSource != null && audioSource.isPlaying)
         {
             audioSource.Stop();
         }

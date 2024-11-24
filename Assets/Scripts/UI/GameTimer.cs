@@ -1,72 +1,51 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class GameTimer : MonoBehaviour
 {
-    public float timeRemaining = 30f; // Time in seconds
-    public TextMeshProUGUI timerDisplay; // Text element to display the timer
-    public GameObject endGamePanel; // Panel with "Draw" message and buttons
-    public TextMeshProUGUI endGameMessage; // Text for displaying "Draw" message
+    public float timeRemaining = 30f; // Timer for each round
+    public TextMeshProUGUI timerDisplay; // UI element to display the timer
+    public GameOverManager gameOverManager; // Reference to the GameOverManager
 
-    public BackgroundMusicController backgroundMusicController; // Reference to the music controller
-
-    private bool isGameEnded = false;
-    private bool gameHasStarted = false; // Flag to track if game has started
-
-    private void Start()
-    {
-        endGamePanel.SetActive(false); // Hide the end game panel at the start
-    }
+    private bool gameHasStarted = false;
 
     private void Update()
     {
-        if (gameHasStarted && !isGameEnded)
+        if (gameHasStarted && timeRemaining > 0)
         {
-            if (timeRemaining > 0)
-            {
-                timeRemaining -= Time.deltaTime; // Countdown the timer
-                timerDisplay.text = Mathf.Ceil(timeRemaining).ToString(); // Update display
-            }
-            else
-            {
-                EndGame();
-            }
+            timeRemaining -= Time.deltaTime;
+            timerDisplay.text = Mathf.Ceil(timeRemaining).ToString();
+        }
+        else if (gameHasStarted && timeRemaining <= 0)
+        {
+            gameHasStarted = false;
+            HandleRoundDraw();
         }
     }
 
-    // Starting the game timer after the countdown ends
     public void StartGameTimer()
     {
+        timeRemaining = 30f; // Reset the timer for each round
         gameHasStarted = true;
     }
 
-    private void EndGame()
+    public void ResetTimer()
     {
-        isGameEnded = true;
+        timeRemaining = 30f; // Reset timer to its initial state
+        gameHasStarted = false;
+        timerDisplay.text = Mathf.Ceil(timeRemaining).ToString(); // Update the display
+    }
 
-        // Stop the background music
-        if (backgroundMusicController != null)
+    private void HandleRoundDraw()
+    {
+        Debug.Log("Timer ran out! Round is a draw.");
+        if (gameOverManager != null)
         {
-            backgroundMusicController.StopMusic();
+            gameOverManager.HandleRoundDraw(); // Notify the GameOverManager of a draw
         }
-
-        Time.timeScale = 0f; // Freeze the game
-        endGamePanel.SetActive(true); // Show the end game panel
-        endGameMessage.text = "Draw!"; // Display "Draw" message
-    }
-
-    public void Rematch()
-    {
-        Time.timeScale = 1f; // Unfreeze the game
-        // Reset the scene or reload it to start a new match
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
-    }
-
-    public void Quit()
-    {
-        Time.timeScale = 1f; // Unfreeze the game
-        // Load the main menu
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        else
+        {
+            Debug.LogError("GameOverManager is not assigned in GameTimer!");
+        }
     }
 }

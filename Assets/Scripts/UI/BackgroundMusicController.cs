@@ -8,7 +8,6 @@ public class BackgroundMusicController : MonoBehaviour
 
     private void Awake()
     {
-        // Add or find an AudioSource component
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
@@ -17,7 +16,7 @@ public class BackgroundMusicController : MonoBehaviour
 
         // Configure the AudioSource
         audioSource.clip = backgroundMusic;
-        audioSource.loop = true; // Loop the music
+        audioSource.loop = true;
         audioSource.volume = volume;
         audioSource.playOnAwake = false; // Don't play until triggered
     }

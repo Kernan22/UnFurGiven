@@ -34,16 +34,16 @@ public class PlayerController : MonoBehaviour
     public AudioClip rockCollisionSound;
     [Range(0f, 1f)] public float rockCollisionSoundVolume = 0.7f;
 
-    public AudioClip groundCollisionSound; // Sound effect for hitting the ground
+    public AudioClip groundCollisionSound;
     [Range(0f, 1f)] public float groundCollisionSoundVolume = 0.7f;
 
-    public AudioClip waterSplashSound; // Sound effect for landing in water
+    public AudioClip waterSplashSound;
     [Range(0f, 1f)] public float waterSplashSoundVolume = 0.7f;
 
-    public GameObject treeEffectPrefab; // Prefab for tree collision effect
-    public GameObject rockEffectPrefab; // Prefab for rock collision effect
-    public GameObject groundEffectPrefab; // Prefab for ground collision effect
-    public GameObject waterSplashEffectPrefab; // Prefab for water landing effect
+    public GameObject treeEffectPrefab;
+    public GameObject rockEffectPrefab;
+    public GameObject groundEffectPrefab;
+    public GameObject waterSplashEffectPrefab;
 
     private AudioSource audioSource;
     private Vector3 originalScale;
@@ -54,11 +54,9 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         currentSpeed = baseSpeed;
 
-        // Save the original scale and mass
         originalScale = transform.localScale;
         originalMass = rb.mass;
 
-        // Add an AudioSource if not already present
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
@@ -100,12 +98,36 @@ public class PlayerController : MonoBehaviour
         camForward.Normalize();
         camRight.Normalize();
 
-        // Maintain consistent movement control regardless of mass
         Vector3 movement = (camForward * movementY + camRight * movementX).normalized;
 
-        // Scale force dynamically based on mass to keep the same responsiveness
-        float forceMultiplier = rb.mass / originalMass;
-        rb.AddForce(movement * currentSpeed * forceMultiplier, ForceMode.Force);
+        rb.AddForce(movement * currentSpeed, ForceMode.Force);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player1") || collision.gameObject.CompareTag("Player2"))
+        {
+            PlayCollisionSound();
+        }
+
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+            PlaySound(groundCollisionSound, groundCollisionSoundVolume);
+            InstantiateEffect(groundEffectPrefab, collision.contacts[0].point);
+        }
+
+        if (collision.gameObject.CompareTag("Tree"))
+        {
+            PlaySound(treeCollisionSound, treeCollisionSoundVolume);
+            InstantiateEffect(treeEffectPrefab, collision.contacts[0].point);
+        }
+
+        if (collision.gameObject.CompareTag("Rock"))
+        {
+            PlaySound(rockCollisionSound, rockCollisionSoundVolume);
+            InstantiateEffect(rockEffectPrefab, collision.contacts[0].point);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -118,87 +140,22 @@ public class PlayerController : MonoBehaviour
                 gameOverManager.PlayerFallsInWater(gameObject.tag);
             }
 
-            // Play water splash sound
-            if (waterSplashSound != null && audioSource != null)
-            {
-                audioSource.PlayOneShot(waterSplashSound, waterSplashSoundVolume);
-            }
-
-            // Instantiate water splash effect
-            if (waterSplashEffectPrefab != null)
-            {
-                Instantiate(waterSplashEffectPrefab, transform.position, Quaternion.identity);
-            }
+            PlaySound(waterSplashSound, waterSplashSoundVolume);
+            InstantiateEffect(waterSplashEffectPrefab, transform.position);
         }
 
         if (other.CompareTag("Powerup"))
         {
             ApplyPowerup();
             Destroy(other.gameObject);
-
-            if (powerupSound != null && audioSource != null)
-            {
-                audioSource.PlayOneShot(powerupSound, powerupSoundVolume);
-            }
-
-            Invoke(nameof(RemovePowerup), powerupDuration);
-        }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        // Handle ground collisions
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-
-            if (groundCollisionSound != null && audioSource != null)
-            {
-                audioSource.PlayOneShot(groundCollisionSound, groundCollisionSoundVolume);
-            }
-
-            if (groundEffectPrefab != null)
-            {
-                Instantiate(groundEffectPrefab, collision.contacts[0].point, Quaternion.identity);
-            }
-        }
-
-        // Handle tree collisions
-        if (collision.gameObject.CompareTag("Tree"))
-        {
-            if (treeCollisionSound != null && audioSource != null)
-            {
-                audioSource.PlayOneShot(treeCollisionSound, treeCollisionSoundVolume);
-            }
-
-            if (treeEffectPrefab != null)
-            {
-                Instantiate(treeEffectPrefab, collision.contacts[0].point, Quaternion.identity);
-            }
-        }
-
-        // Handle rock collisions
-        if (collision.gameObject.CompareTag("Rock"))
-        {
-            if (rockCollisionSound != null && audioSource != null)
-            {
-                audioSource.PlayOneShot(rockCollisionSound, rockCollisionSoundVolume);
-            }
-
-            if (rockEffectPrefab != null)
-            {
-                Instantiate(rockEffectPrefab, collision.contacts[0].point, Quaternion.identity);
-            }
+            PlaySound(powerupSound, powerupSoundVolume);
         }
     }
 
     private void ApplyPowerup()
     {
-        // Increase size and mass
         transform.localScale = originalScale * powerupScaleMultiplier;
         rb.mass = originalMass * powerupMassMultiplier;
-
-        // Keep the speed consistent regardless of mass
         currentSpeed = baseSpeed;
     }
 
@@ -207,6 +164,27 @@ public class PlayerController : MonoBehaviour
         transform.localScale = originalScale;
         rb.mass = originalMass;
         currentSpeed = baseSpeed;
+    }
+
+    private void PlayCollisionSound()
+    {
+        PlaySound(collisionSound, collisionSoundVolume);
+    }
+
+    private void PlaySound(AudioClip clip, float volume)
+    {
+        if (clip != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(clip, volume);
+        }
+    }
+
+    private void InstantiateEffect(GameObject effectPrefab, Vector3 position)
+    {
+        if (effectPrefab != null)
+        {
+            Instantiate(effectPrefab, position, Quaternion.identity);
+        }
     }
 
     public void ApplySpeedModifier(float multiplier, float duration)

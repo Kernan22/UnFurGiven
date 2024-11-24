@@ -4,10 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class GameOverManager : MonoBehaviour
 {
-    public static int player1Score = 0; // Static variable to persist Player 1 score
-    public static int player2Score = 0; // Static variable to persist Player 2 score
-    public static int currentRound = 1; // Static variable to persist the current round
-
     public int winningScore = 2; // Number of wins required to win the match
 
     public GameObject endGamePanel;
@@ -17,20 +13,23 @@ public class GameOverManager : MonoBehaviour
     public TextMeshProUGUI roundDisplay;
 
     private bool isRoundActive = true;
+    private BackgroundMusicController musicController;
 
     private void Start()
     {
+        musicController = FindObjectOfType<BackgroundMusicController>();
         InitializeGame();
     }
 
     private void InitializeGame()
     {
-        // Update UI with the current scores and round
         UpdateUI();
-
-        // Hide the end game panel at the start
         endGamePanel.SetActive(false);
-        isRoundActive = true;
+
+        if (musicController != null)
+        {
+            musicController.StopMusic();
+        }
     }
 
     public void PlayerFallsInWater(string playerTag)
@@ -41,13 +40,11 @@ public class GameOverManager : MonoBehaviour
 
         if (playerTag == "Player1")
         {
-            player2Score++;
-            Debug.Log("Player 1 fell into water. Player 2 scores!");
+            GameManager.Player2Score++;
         }
         else if (playerTag == "Player2")
         {
-            player1Score++;
-            Debug.Log("Player 2 fell into water. Player 1 scores!");
+            GameManager.Player1Score++;
         }
 
         CheckForMatchEnd();
@@ -59,29 +56,33 @@ public class GameOverManager : MonoBehaviour
 
         isRoundActive = false;
         Debug.Log("Round ended in a draw.");
-        currentRound++; // Increment the round
-        RestartScene();
+        CheckForMatchEnd();
     }
 
     private void CheckForMatchEnd()
     {
-        if (player1Score >= winningScore)
+        if (GameManager.Player1Score >= winningScore)
         {
             EndMatch("Player 1 Wins!");
         }
-        else if (player2Score >= winningScore)
+        else if (GameManager.Player2Score >= winningScore)
         {
             EndMatch("Player 2 Wins!");
         }
         else
         {
-            currentRound++; // Increment the round number
+            GameManager.CurrentRound++;
             RestartScene();
         }
     }
 
     private void EndMatch(string message)
     {
+        if (musicController != null)
+        {
+            musicController.StopMusic();
+        }
+
         Time.timeScale = 0f; // Pause the game
         endGameMessage.text = message;
         endGamePanel.SetActive(true);
@@ -89,38 +90,42 @@ public class GameOverManager : MonoBehaviour
 
     private void RestartScene()
     {
-        UpdateUI(); // Ensure UI is up-to-date before reloading
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload the current scene
+        UpdateUI();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void UpdateUI()
     {
-        Debug.Log($"Updating UI: Player 1 Score: {player1Score}, Player 2 Score: {player2Score}, Round: {currentRound}");
-        player1ScoreDisplay.text = "Player 1 Score: " + player1Score;
-        player2ScoreDisplay.text = "Player 2 Score: " + player2Score;
-        roundDisplay.text = "Round " + currentRound;
+        player1ScoreDisplay.text = "Player 1 Score: " + GameManager.Player1Score;
+        player2ScoreDisplay.text = "Player 2 Score: " + GameManager.Player2Score;
+        roundDisplay.text = "Round " + GameManager.CurrentRound;
     }
 
     public void Rematch()
     {
-        // Reset scores and rounds for a new match
-        player1Score = 0;
-        player2Score = 0;
-        currentRound = 1;
-
-        // Reload the scene
+        GameManager.ResetGameState();
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void Quit()
     {
-        // Reset static variables for a fresh start
-        player1Score = 0;
-        player2Score = 0;
-        currentRound = 1;
-
+        GameManager.ResetGameState();
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
+    public static class GameManager
+    {
+        public static int Player1Score = 0;
+        public static int Player2Score = 0;
+        public static int CurrentRound = 1;
+
+        public static void ResetGameState()
+        {
+            Player1Score = 0;
+            Player2Score = 0;
+            CurrentRound = 1;
+        }
+    }
+
 }

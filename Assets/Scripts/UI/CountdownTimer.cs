@@ -11,6 +11,7 @@ public class CountdownTimer : MonoBehaviour
     public GameObject player2;
 
     public GameOverManager gameOverManager;
+    public BackgroundMusicController backgroundMusicController;
 
     private Rigidbody player1Rb;
     private Rigidbody player2Rb;
@@ -29,8 +30,8 @@ public class CountdownTimer : MonoBehaviour
 
     public void RestartCountdown()
     {
-        countdownTime = 3; // Reset the countdown time
-        countdownDisplay.gameObject.SetActive(true); // Show the countdown UI
+        countdownTime = 3;
+        countdownDisplay.gameObject.SetActive(true);
         StartCoroutine(CountdownToStart());
     }
 
@@ -50,6 +51,12 @@ public class CountdownTimer : MonoBehaviour
         countdownDisplay.gameObject.SetActive(false);
 
         EnablePlayerControls();
+
+        if (backgroundMusicController != null)
+        {
+            backgroundMusicController.StartMusic();
+        }
+
         FindObjectOfType<GameTimer>().StartGameTimer();
     }
 

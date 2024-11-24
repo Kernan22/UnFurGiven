@@ -24,14 +24,13 @@ public class PowerupSpawner : MonoBehaviour
         audioSource.volume = 0.7f; // Adjust the volume as needed
         audioSource.playOnAwake = false; // Prevent unintended playback
 
-        Debug.Log("PowerupSpawner initialized.");
+        StartSpawning(); // Start spawning at the beginning
     }
 
     public void StartSpawning()
     {
         if (!isSpawning)
         {
-            Debug.Log("Starting power-up spawn routine.");
             StartCoroutine(SpawnPowerupRoutine());
         }
     }
@@ -40,8 +39,8 @@ public class PowerupSpawner : MonoBehaviour
     {
         isSpawning = true;
 
-        // Delay before spawning the power-up
-        yield return new WaitForSeconds(10f); // 10-second delay
+        // Wait for 10 seconds before spawning
+        yield return new WaitForSeconds(10f);
 
         if (currentPowerup == null)
         {
@@ -54,12 +53,6 @@ public class PowerupSpawner : MonoBehaviour
     private void SpawnPowerup()
     {
         Collider planeCollider = spawnPlane.GetComponent<Collider>();
-        if (planeCollider == null)
-        {
-            Debug.LogError("SpawnPlane collider is missing!");
-            return;
-        }
-
         Vector3 spawnPosition = GetRandomPointInBounds(planeCollider.bounds);
 
         Debug.Log("Spawning power-up at position: " + spawnPosition);
@@ -83,11 +76,10 @@ public class PowerupSpawner : MonoBehaviour
         // Destroy the current power-up if it exists
         if (currentPowerup != null)
         {
-            Debug.Log("Destroying current power-up during reset.");
             Destroy(currentPowerup);
         }
 
-        // Restart spawning logic
+        // Restart spawning logic for the next round
         StartSpawning();
     }
 

@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class MushroomLaunch : MonoBehaviour
 {
-    public float launchForce = 10f; // Adjust the force as needed
-    public AudioClip launchSound; // Sound to play on collision
-    public GameObject mushroomEffectPrefab; // Animation or particle effect prefab to play on collision
+    public float launchForce = 10f; 
+    public AudioClip launchSound; 
+    public GameObject mushroomEffectPrefab; 
     private AudioSource audioSource;
 
     private void Start()
     {
-        // Add an AudioSource to the mushroom if it doesn't exist
+        // Audio source for mushroom collision
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
@@ -27,7 +27,7 @@ public class MushroomLaunch : MonoBehaviour
             // Apply upward force to the player's Rigidbody
             rb.AddForce(Vector3.up * launchForce, ForceMode.Impulse);
 
-            // Play the launch sound
+            // Play the sound
             if (audioSource != null && launchSound != null)
             {
                 audioSource.PlayOneShot(launchSound);

@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class BackgroundMusicController : MonoBehaviour
 {
-    public AudioClip backgroundMusic; // The background music clip
-    [Range(0f, 1f)] public float volume = 0.5f; // Volume for the background music
+    public AudioClip backgroundMusic; 
+    [Range(0f, 1f)] public float volume = 0.5f; 
     private AudioSource audioSource;
 
     private void Awake()

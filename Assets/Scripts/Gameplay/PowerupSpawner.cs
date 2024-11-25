@@ -13,7 +13,7 @@ public class PowerupSpawner : MonoBehaviour
 
     private void Start()
     {
-        // Add an AudioSource component if not already attached
+        // Power up Audio
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
@@ -21,8 +21,8 @@ public class PowerupSpawner : MonoBehaviour
         }
 
         // Configure the AudioSource
-        audioSource.volume = 0.7f; // Adjust the volume as needed
-        audioSource.playOnAwake = false; // Prevent unintended playback
+        audioSource.volume = 0.7f; 
+        audioSource.playOnAwake = false; 
 
         StartSpawning(); // Start spawning at the beginning
     }
@@ -86,7 +86,7 @@ public class PowerupSpawner : MonoBehaviour
     private Vector3 GetRandomPointInBounds(Bounds bounds)
     {
         float x = Random.Range(bounds.min.x, bounds.max.x);
-        float y = bounds.center.y; // Spawn at the y-position of the plane
+        float y = bounds.center.y; 
         float z = Random.Range(bounds.min.z, bounds.max.z);
         return new Vector3(x, y, z);
     }

@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class RabbitOrientation : MonoBehaviour
 {
-    public Transform cameraTransform; // Assign your camera here
+    public Transform cameraTransform; 
 
-    private Quaternion initialRotation; // Initial rotation of the rabbit
+    private Quaternion initialRotation; 
 
     void Start()
     {
-        // Store the initial rotation of the rabbit
+        
         initialRotation = transform.rotation;
     }
 
@@ -16,10 +16,10 @@ public class RabbitOrientation : MonoBehaviour
     {
         if (cameraTransform == null) return;
 
-        // Get the Y-axis rotation difference between the camera and initial rotation
+       
         float cameraYaw = cameraTransform.eulerAngles.y;
 
-        // Apply the Y-axis rotation to the rabbit while keeping the initial X and Z rotations
+        
         transform.rotation = Quaternion.Euler(
             initialRotation.eulerAngles.x,
             cameraYaw,

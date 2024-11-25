@@ -15,7 +15,7 @@ public class PlayerCollisionEffect : MonoBehaviour
             // Calculate the midpoint between Player1 and Player2
             Vector3 midpoint = (transform.position + collision.transform.position) / 2;
 
-            // Instantiate the collision effect at the midpoint
+            // Make the collision effect happen where the players collide
             if (collisionEffectPrefab != null)
             {
                 Instantiate(collisionEffectPrefab, midpoint, Quaternion.identity);

@@ -16,8 +16,8 @@ public class CountdownTimer : MonoBehaviour
     private Rigidbody player1Rb;
     private Rigidbody player2Rb;
 
-    public Animator hedgehogAnimator; // Reference to hedgehog's animator
-    public Animator rabbitAnimator; // Reference to rabbit's animator
+    public Animator hedgehogAnimator; 
+    public Animator rabbitAnimator; 
 
     private void Start()
     {

@@ -83,7 +83,7 @@ public class GameOverManager : MonoBehaviour
             musicController.StopMusic();
         }
 
-        Time.timeScale = 0f; // Pause the game
+        Time.timeScale = 0f; 
         endGameMessage.text = message;
         endGamePanel.SetActive(true);
     }

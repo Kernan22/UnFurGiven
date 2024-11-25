@@ -16,9 +16,15 @@ public class CountdownTimer : MonoBehaviour
     private Rigidbody player1Rb;
     private Rigidbody player2Rb;
 
+    public Animator hedgehogAnimator; // Add reference to the hedgehog's animator
+
     private void Start()
     {
         InitializePlayers();
+        if (hedgehogAnimator != null)
+        {
+            hedgehogAnimator.enabled = false; // Ensure the animator is disabled initially
+        }
         StartCoroutine(CountdownToStart());
     }
 
@@ -30,8 +36,8 @@ public class CountdownTimer : MonoBehaviour
 
     public void RestartCountdown()
     {
-        countdownTime = 3;
-        countdownDisplay.gameObject.SetActive(true);
+        countdownTime = 3; // Reset the countdown time
+        countdownDisplay.gameObject.SetActive(true); // Show the countdown UI again
         StartCoroutine(CountdownToStart());
     }
 
@@ -52,6 +58,13 @@ public class CountdownTimer : MonoBehaviour
 
         EnablePlayerControls();
 
+        // Start the hedgehog animation after the countdown
+        if (hedgehogAnimator != null)
+        {
+            hedgehogAnimator.enabled = true; // Enable the animator
+        }
+
+        // Start the background music after the countdown
         if (backgroundMusicController != null)
         {
             backgroundMusicController.StartMusic();

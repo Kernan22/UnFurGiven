@@ -366,6 +366,7 @@
 "Assets/Scripts/Gameplay/MushroomLaunch.cs"
 "Assets/Scripts/Gameplay/PlayerController.cs"
 "Assets/Scripts/Gameplay/PowerupSpawner.cs"
+"Assets/Scripts/Gameplay/RabbitOrientation.cs"
 "Assets/Scripts/UI/BackgroundMusicController.cs"
 "Assets/Scripts/UI/CountdownTimer.cs"
 "Assets/Scripts/UI/GameOverManager.cs"

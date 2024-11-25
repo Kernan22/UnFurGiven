@@ -16,15 +16,23 @@ public class CountdownTimer : MonoBehaviour
     private Rigidbody player1Rb;
     private Rigidbody player2Rb;
 
-    public Animator hedgehogAnimator; // Add reference to the hedgehog's animator
+    public Animator hedgehogAnimator; // Reference to hedgehog's animator
+    public Animator rabbitAnimator; // Reference to rabbit's animator
 
     private void Start()
     {
         InitializePlayers();
+
+        // Ensure both animators are disabled initially
         if (hedgehogAnimator != null)
         {
-            hedgehogAnimator.enabled = false; // Ensure the animator is disabled initially
+            hedgehogAnimator.enabled = false;
         }
+        if (rabbitAnimator != null)
+        {
+            rabbitAnimator.enabled = false;
+        }
+
         StartCoroutine(CountdownToStart());
     }
 
@@ -58,10 +66,17 @@ public class CountdownTimer : MonoBehaviour
 
         EnablePlayerControls();
 
-        // Start the hedgehog animation after the countdown
+        // Start the hedgehog and rabbit animations after the countdown
         if (hedgehogAnimator != null)
         {
-            hedgehogAnimator.enabled = true; // Enable the animator
+            hedgehogAnimator.enabled = true;
+            hedgehogAnimator.SetBool("isRunning", true); // Trigger the running animation
+        }
+
+        if (rabbitAnimator != null)
+        {
+            rabbitAnimator.enabled = true;
+            rabbitAnimator.SetBool("isRunning", true); // Trigger the running animation
         }
 
         // Start the background music after the countdown

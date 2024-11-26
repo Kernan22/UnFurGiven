@@ -3,6 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject mainMenuCanvas; // Assign the Main Menu canvas in the Inspector
+    public GameObject controlsCanvas; // Assign the Controls canvas in the Inspector
+
     public void StartGame()
     {
         // Load the main game scene 
@@ -12,13 +15,27 @@ public class MainMenu : MonoBehaviour
     public void OpenOptions()
     {
         // Display options UI (TBA)
-        Debug.Log("Options Menu Opened"); 
+        Debug.Log("Options Menu Opened");
+    }
+
+    public void OpenControls()
+    {
+        // Switch to the Controls canvas
+        mainMenuCanvas.SetActive(false);
+        controlsCanvas.SetActive(true);
+    }
+
+    public void BackToMainMenu()
+    {
+        // Switch back to the Main Menu canvas
+        controlsCanvas.SetActive(false);
+        mainMenuCanvas.SetActive(true);
     }
 
     public void QuitGame()
     {
-        // Quit the application (TBA)
-        Debug.Log("Game Quit"); 
+        // Quit the application
+        Debug.Log("Game Quit");
         Application.Quit();
     }
 }

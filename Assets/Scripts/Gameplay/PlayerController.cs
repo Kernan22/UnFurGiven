@@ -17,10 +17,6 @@ public class PlayerController : MonoBehaviour
     private float movementX;
     private float movementY;
 
-    // Mouse sensitivity
-    public float mouseSensitivity = 100f;
-    private float rotationX = 0f;
-
     // Power-up settings
     public float powerupScaleMultiplier = 1.5f;
     public float powerupMassMultiplier = 2f;
@@ -31,6 +27,23 @@ public class PlayerController : MonoBehaviour
     // Collision sound settings
     public AudioClip collisionSound;
     [Range(0f, 1f)] public float collisionSoundVolume = 0.7f;
+
+    public AudioClip treeCollisionSound;
+    [Range(0f, 1f)] public float treeCollisionSoundVolume = 0.7f;
+
+    public AudioClip rockCollisionSound;
+    [Range(0f, 1f)] public float rockCollisionSoundVolume = 0.7f;
+
+    public AudioClip groundCollisionSound;
+    [Range(0f, 1f)] public float groundCollisionSoundVolume = 0.7f;
+
+    public AudioClip waterSplashSound;
+    [Range(0f, 1f)] public float waterSplashSoundVolume = 0.7f;
+
+    public GameObject treeEffectPrefab;
+    public GameObject rockEffectPrefab;
+    public GameObject groundEffectPrefab;
+    public GameObject waterSplashEffectPrefab;
 
     private AudioSource audioSource;
     private Vector3 originalScale;
@@ -56,47 +69,18 @@ public class PlayerController : MonoBehaviour
         {
             cameraTransform = Camera.main.transform;
         }
-
-        // Lock the cursor for mouse look
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void OnMove(InputValue movementValue)
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
-        Debug.Log($"Movement Input: {movementVector}");
         movementX = movementVector.x;
         movementY = movementVector.y;
     }
 
-    public void OnLook(InputValue lookValue)
-    {
-        Vector2 mouseDelta = lookValue.Get<Vector2>();
-        Debug.Log($"Look Input: {mouseDelta}");
-        float mouseX = mouseDelta.x * mouseSensitivity * Time.deltaTime;
-        float mouseY = mouseDelta.y * mouseSensitivity * Time.deltaTime;
-
-        rotationX -= mouseY;
-        rotationX = Mathf.Clamp(rotationX, -90f, 90f);
-
-        cameraTransform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
-        transform.Rotate(Vector3.up * mouseX);
-    }
-
-
     public void OnJump(InputValue jumpValue)
     {
         if (isGrounded)
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
-        }
-    }
-
-    private void Update()
-    {
-        // Check for left mouse click to jump
-        if (Mouse.current.leftButton.isPressed && isGrounded)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
@@ -129,12 +113,37 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
-            PlaySound(collisionSound, collisionSoundVolume);
+            PlaySound(groundCollisionSound, groundCollisionSoundVolume);
+            InstantiateEffect(groundEffectPrefab, collision.contacts[0].point);
+        }
+
+        if (collision.gameObject.CompareTag("Tree"))
+        {
+            PlaySound(treeCollisionSound, treeCollisionSoundVolume);
+            InstantiateEffect(treeEffectPrefab, collision.contacts[0].point);
+        }
+
+        if (collision.gameObject.CompareTag("Rock"))
+        {
+            PlaySound(rockCollisionSound, rockCollisionSoundVolume);
+            InstantiateEffect(rockEffectPrefab, collision.contacts[0].point);
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Water"))
+        {
+            GameOverManager gameOverManager = FindObjectOfType<GameOverManager>();
+            if (gameOverManager != null)
+            {
+                gameOverManager.PlayerFallsInWater(gameObject.tag);
+            }
+
+            PlaySound(waterSplashSound, waterSplashSoundVolume);
+            InstantiateEffect(waterSplashEffectPrefab, transform.position);
+        }
+
         if (other.CompareTag("Powerup"))
         {
             ApplyPowerup();
@@ -169,7 +178,15 @@ public class PlayerController : MonoBehaviour
             audioSource.PlayOneShot(clip, volume);
         }
     }
-    
+
+    private void InstantiateEffect(GameObject effectPrefab, Vector3 position)
+    {
+        if (effectPrefab != null)
+        {
+            Instantiate(effectPrefab, position, Quaternion.identity);
+        }
+    }
+
     public void ApplySpeedModifier(float multiplier, float duration)
     {
         if (!isSlowed)
@@ -186,5 +203,4 @@ public class PlayerController : MonoBehaviour
         currentSpeed = baseSpeed;
         isSlowed = false;
     }
-
 }

@@ -361,6 +361,8 @@
 "Assets/Scripts/Gameplay/BallBounceController.cs"
 "Assets/Scripts/Gameplay/BallCollisionEffect.cs"
 "Assets/Scripts/Gameplay/CampfireHazard.cs"
+"Assets/Scripts/Gameplay/EnemyBehaviour.cs"
+"Assets/Scripts/Gameplay/EnemySpawner.cs"
 "Assets/Scripts/Gameplay/FireEffectAnchor.cs"
 "Assets/Scripts/Gameplay/HedgehogOrientation.cs"
 "Assets/Scripts/Gameplay/MushroomLaunch.cs"

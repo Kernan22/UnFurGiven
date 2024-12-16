@@ -23,10 +23,10 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0.63
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 37f38494db36cf845ac217083aa9e39b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -182,6 +182,14 @@ PrefabInstance:
       propertyPath: launchForce
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2371036276614408567, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
+      propertyPath: launchSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e3881d61f500a4944b68f4cc307fe96a, type: 3}
+    - target: {fileID: 2371036276614408567, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
+      propertyPath: mushroomEffectPrefab
+      value: 
+      objectReference: {fileID: 4425129568585013132, guid: bbeeb0ddc21369746aaaae5c5c1c09cf, type: 3}
     - target: {fileID: 8415128113264184265, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
       propertyPath: m_Name
       value: Shroom1
@@ -229,10 +237,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8415128113264184265, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 215923376}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
 --- !u!4 &101886765 stripped
 Transform:
@@ -309,7 +314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e27e7ddeaaf185245920dc5a880d0e50, type: 3}
       propertyPath: m_TagString
-      value: Rock
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -534,7 +539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e27e7ddeaaf185245920dc5a880d0e50, type: 3}
       propertyPath: m_TagString
-      value: Rock
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -549,26 +554,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e27e7ddeaaf185245920dc5a880d0e50, type: 3}
   m_PrefabInstance: {fileID: 197105544}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &215923375 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8415128113264184265, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
-  m_PrefabInstance: {fileID: 101886764}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &215923376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 215923375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2844cbcc4ac13c9418f6284d9cbe0dea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  launchForce: 10
-  launchSound: {fileID: 0}
-  mushroomEffectPrefab: {fileID: 0}
 --- !u!1 &246498841
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,7 +600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundMusic: {fileID: 8300000, guid: 6f63aa16a86d56845ac1f553f38f402f, type: 3}
   volume: 0.7
---- !u!1 &315780161
+--- !u!1 &308945143
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -623,28 +608,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 315780162}
+  - component: {fileID: 308945144}
   m_Layer: 0
-  m_Name: Player2Start
+  m_Name: SpawnPoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &315780162
+--- !u!4 &308945144
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 315780161}
+  m_GameObject: {fileID: 308945143}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.2, y: 5, z: 11.4}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 49.3, y: -8.23, z: 27.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1495203070}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &316915992
 PrefabInstance:
@@ -872,6 +857,14 @@ PrefabInstance:
       propertyPath: launchForce
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2371036276614408567, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
+      propertyPath: launchSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e3881d61f500a4944b68f4cc307fe96a, type: 3}
+    - target: {fileID: 2371036276614408567, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
+      propertyPath: mushroomEffectPrefab
+      value: 
+      objectReference: {fileID: 4425129568585013132, guid: bbeeb0ddc21369746aaaae5c5c1c09cf, type: 3}
     - target: {fileID: 8415128113264184265, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
       propertyPath: m_Name
       value: Shroom1 (1)
@@ -919,10 +912,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8415128113264184265, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1407952888}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
 --- !u!4 &372572043 stripped
 Transform:
@@ -1340,7 +1330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537997121}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.22189863, y: 0.2063053, z: -0.048098136, w: 0.9517803}
+  m_LocalRotation: {x: 0.22174478, y: 0.20932654, z: -0.04880251, w: 0.95112044}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1560,16 +1550,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7699925177918739645, guid: e39ff66429756d445bea3a4f8e4a5284, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e39ff66429756d445bea3a4f8e4a5284, type: 3}
---- !u!1 &613907449 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6070824290462431900, guid: 71fd36cdc2a156e43aebbaf2ddc322d6, type: 3}
-  m_PrefabInstance: {fileID: 1408536323}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &629925102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1622,6 +1611,14 @@ PrefabInstance:
       propertyPath: launchForce
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4373948826383718410, guid: 6326fb00caec3ea49800cc089ee60345, type: 3}
+      propertyPath: launchSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e3881d61f500a4944b68f4cc307fe96a, type: 3}
+    - target: {fileID: 4373948826383718410, guid: 6326fb00caec3ea49800cc089ee60345, type: 3}
+      propertyPath: mushroomEffectPrefab
+      value: 
+      objectReference: {fileID: 4425129568585013132, guid: bbeeb0ddc21369746aaaae5c5c1c09cf, type: 3}
     - target: {fileID: 4477376403295274323, guid: 6326fb00caec3ea49800cc089ee60345, type: 3}
       propertyPath: m_Name
       value: Shroom2 (1)
@@ -1629,10 +1626,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4477376403295274323, guid: 6326fb00caec3ea49800cc089ee60345, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 861926409}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6326fb00caec3ea49800cc089ee60345, type: 3}
 --- !u!4 &629925103 stripped
 Transform:
@@ -2072,26 +2066,6 @@ MonoBehaviour:
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
   m_ScrollDeltaPerTick: 6
---- !u!1 &861926408 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4477376403295274323, guid: 6326fb00caec3ea49800cc089ee60345, type: 3}
-  m_PrefabInstance: {fileID: 629925102}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &861926409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 861926408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2844cbcc4ac13c9418f6284d9cbe0dea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  launchForce: 10
-  launchSound: {fileID: 0}
-  mushroomEffectPrefab: {fileID: 0}
 --- !u!1 &867207122
 GameObject:
   m_ObjectHideFlags: 3
@@ -2224,6 +2198,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 13937b23249a2ae4d94b6ad5d97eb127, type: 3}
   m_PrefabInstance: {fileID: 1838144270}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &888516509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 888516510}
+  m_Layer: 0
+  m_Name: SpawnPoint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &888516510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888516509}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.06, y: -8.23, z: 34.22}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1495203070}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &907953941 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d1fea21e7f629b24898c15fd7ca782f6, type: 3}
@@ -2293,8 +2298,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2371036276614408567, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
       propertyPath: launchForce
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 2371036276614408567, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
+      propertyPath: launchSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e3881d61f500a4944b68f4cc307fe96a, type: 3}
+    - target: {fileID: 2371036276614408567, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
+      propertyPath: mushroomEffectPrefab
+      value: 
+      objectReference: {fileID: 4425129568585013132, guid: bbeeb0ddc21369746aaaae5c5c1c09cf, type: 3}
     - target: {fileID: 8415128113264184265, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
       propertyPath: m_Name
       value: Shroom1 (2)
@@ -2354,10 +2367,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8415128113264184265, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1183555082}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
 --- !u!4 &926426667 stripped
 Transform:
@@ -2729,6 +2739,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bridge (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f056cc990abac564bb152d1b603231b4, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2777,6 +2791,7 @@ Transform:
   - {fileID: 1027073566}
   - {fileID: 796026358}
   - {fileID: 50483397}
+  - {fileID: 1495203070}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &987445086
@@ -2843,6 +2858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bridge
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f056cc990abac564bb152d1b603231b4, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2856,37 +2875,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e0c156308a3bddb46b26de5b6d629fcd, type: 3}
   m_PrefabInstance: {fileID: 1806909034}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1006625377
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1006625378}
-  m_Layer: 0
-  m_Name: Player1Start
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1006625378
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006625377}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.02, y: -0.62, z: -17.83}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1019546074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3125,6 +3113,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1027073566}
     m_Modifications:
+    - target: {fileID: 3139422608221117396, guid: 0961dcab35ddc0046a15f00792ab129a, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5921536836391837671, guid: 0961dcab35ddc0046a15f00792ab129a, type: 3}
       propertyPath: m_Name
       value: Island002
@@ -3202,6 +3194,14 @@ PrefabInstance:
       propertyPath: launchForce
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1738844691131506655, guid: 71fd36cdc2a156e43aebbaf2ddc322d6, type: 3}
+      propertyPath: launchSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e3881d61f500a4944b68f4cc307fe96a, type: 3}
+    - target: {fileID: 1738844691131506655, guid: 71fd36cdc2a156e43aebbaf2ddc322d6, type: 3}
+      propertyPath: mushroomEffectPrefab
+      value: 
+      objectReference: {fileID: 4425129568585013132, guid: bbeeb0ddc21369746aaaae5c5c1c09cf, type: 3}
     - target: {fileID: 6070824290462431900, guid: 71fd36cdc2a156e43aebbaf2ddc322d6, type: 3}
       propertyPath: m_Name
       value: Shroom3 (1)
@@ -3249,10 +3249,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6070824290462431900, guid: 71fd36cdc2a156e43aebbaf2ddc322d6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1248086512}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71fd36cdc2a156e43aebbaf2ddc322d6, type: 3}
 --- !u!4 &1070298636 stripped
 Transform:
@@ -3398,26 +3395,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8716952615309824937, guid: 13937b23249a2ae4d94b6ad5d97eb127, type: 3}
---- !u!1 &1183555081 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8415128113264184265, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
-  m_PrefabInstance: {fileID: 926426666}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1183555082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1183555081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2844cbcc4ac13c9418f6284d9cbe0dea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  launchForce: 40
-  launchSound: {fileID: 0}
-  mushroomEffectPrefab: {fileID: 0}
 --- !u!1 &1211016355
 GameObject:
   m_ObjectHideFlags: 0
@@ -3522,26 +3499,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e0c156308a3bddb46b26de5b6d629fcd, type: 3}
   m_PrefabInstance: {fileID: 1790364873}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1248086511 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6070824290462431900, guid: 71fd36cdc2a156e43aebbaf2ddc322d6, type: 3}
-  m_PrefabInstance: {fileID: 1070298635}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1248086512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248086511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2844cbcc4ac13c9418f6284d9cbe0dea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  launchForce: 10
-  launchSound: {fileID: 0}
-  mushroomEffectPrefab: {fileID: 0}
 --- !u!1001 &1268458746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4218,26 +4175,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8388668799978891419, guid: c9ed10e1c5bd0b64d8c3d17e0eb65b78, type: 3}
---- !u!1 &1407952887 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8415128113264184265, guid: 06ec9714d5c02e24bbc61e8f634e012f, type: 3}
-  m_PrefabInstance: {fileID: 372572042}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1407952888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407952887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2844cbcc4ac13c9418f6284d9cbe0dea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  launchForce: 10
-  launchSound: {fileID: 0}
-  mushroomEffectPrefab: {fileID: 0}
 --- !u!1001 &1408536323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4250,6 +4187,14 @@ PrefabInstance:
       propertyPath: launchForce
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1738844691131506655, guid: 71fd36cdc2a156e43aebbaf2ddc322d6, type: 3}
+      propertyPath: launchSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e3881d61f500a4944b68f4cc307fe96a, type: 3}
+    - target: {fileID: 1738844691131506655, guid: 71fd36cdc2a156e43aebbaf2ddc322d6, type: 3}
+      propertyPath: mushroomEffectPrefab
+      value: 
+      objectReference: {fileID: 4425129568585013132, guid: bbeeb0ddc21369746aaaae5c5c1c09cf, type: 3}
     - target: {fileID: 6070824290462431900, guid: 71fd36cdc2a156e43aebbaf2ddc322d6, type: 3}
       propertyPath: m_Name
       value: Shroom3
@@ -4297,31 +4242,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6070824290462431900, guid: 71fd36cdc2a156e43aebbaf2ddc322d6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1408536325}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71fd36cdc2a156e43aebbaf2ddc322d6, type: 3}
 --- !u!4 &1408536324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6878182091702607910, guid: 71fd36cdc2a156e43aebbaf2ddc322d6, type: 3}
   m_PrefabInstance: {fileID: 1408536323}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1408536325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613907449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2844cbcc4ac13c9418f6284d9cbe0dea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  launchForce: 10
-  launchSound: {fileID: 0}
-  mushroomEffectPrefab: {fileID: 0}
 --- !u!1 &1433774979
 GameObject:
   m_ObjectHideFlags: 0
@@ -4349,7 +4276,7 @@ Camera:
   m_GameObject: {fileID: 1433774979}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -4659,6 +4586,97 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1495203069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1495203070}
+  - component: {fileID: 1495203071}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1495203070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495203069}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2012818289}
+  - {fileID: 308945144}
+  - {fileID: 888516510}
+  - {fileID: 1515094243}
+  m_Father: {fileID: 986837311}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1495203071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495203069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4814e74d69a712c43a29614164439732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 779350194382415778, guid: 47395697966f9904b87bc6f55f5ba3ad, type: 3}
+  - {fileID: 6441675597742898671, guid: 090677340b8b07c4d84dd84d2e458df6, type: 3}
+  - {fileID: 5113198953433457279, guid: 18adb9c029434954591e85597a562ebe, type: 3}
+  - {fileID: 451279439511642123, guid: d0219c6b456f1a9428c97991c1d1cf0d, type: 3}
+  spawnPoints:
+  - {fileID: 2012818289}
+  - {fileID: 308945144}
+  - {fileID: 888516510}
+  - {fileID: 1515094243}
+  spawnInterval: 5
+  maxEnemies: 10
+--- !u!1 &1515094242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1515094243}
+  m_Layer: 0
+  m_Name: SpawnPoint4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1515094243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515094242}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -47.6, y: -8.23, z: 61.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1495203070}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1515588588 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e27e7ddeaaf185245920dc5a880d0e50, type: 3}
@@ -4903,6 +4921,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f056cc990abac564bb152d1b603231b4, type: 3}
       propertyPath: m_Name
       value: Bridge (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f056cc990abac564bb152d1b603231b4, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5432,6 +5454,14 @@ PrefabInstance:
       propertyPath: launchForce
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4373948826383718410, guid: 6326fb00caec3ea49800cc089ee60345, type: 3}
+      propertyPath: launchSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e3881d61f500a4944b68f4cc307fe96a, type: 3}
+    - target: {fileID: 4373948826383718410, guid: 6326fb00caec3ea49800cc089ee60345, type: 3}
+      propertyPath: mushroomEffectPrefab
+      value: 
+      objectReference: {fileID: 4425129568585013132, guid: bbeeb0ddc21369746aaaae5c5c1c09cf, type: 3}
     - target: {fileID: 4477376403295274323, guid: 6326fb00caec3ea49800cc089ee60345, type: 3}
       propertyPath: m_Name
       value: Shroom2
@@ -5439,10 +5469,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4477376403295274323, guid: 6326fb00caec3ea49800cc089ee60345, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2096614696}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6326fb00caec3ea49800cc089ee60345, type: 3}
 --- !u!4 &1653469785 stripped
 Transform:
@@ -6205,6 +6232,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24af0c198c23356469acd0a88e0202f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2012818288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2012818289}
+  m_Layer: 0
+  m_Name: SpawnPoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2012818289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012818288}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.92, y: -8.23, z: -3.404}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1495203070}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2031974727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6405,7 +6463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e27e7ddeaaf185245920dc5a880d0e50, type: 3}
       propertyPath: m_TagString
-      value: Rock
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6442,26 +6500,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3447038591770236762, guid: e27e7ddeaaf185245920dc5a880d0e50, type: 3}
---- !u!1 &2096614695 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4477376403295274323, guid: 6326fb00caec3ea49800cc089ee60345, type: 3}
-  m_PrefabInstance: {fileID: 1653469784}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2096614696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2096614695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2844cbcc4ac13c9418f6284d9cbe0dea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  launchForce: 10
-  launchSound: {fileID: 0}
-  mushroomEffectPrefab: {fileID: 0}
 --- !u!1001 &2134697964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6568,5 +6606,3 @@ SceneRoots:
   - {fileID: 443898963}
   - {fileID: 986837311}
   - {fileID: 246498843}
-  - {fileID: 1006625378}
-  - {fileID: 315780162}

@@ -14,8 +14,10 @@ public class BallBounceController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Check if the collision is with the other ball
-        if (collision.gameObject.CompareTag("Player1") || collision.gameObject.CompareTag("Player2"))
+        // Check if the collision is with Player1, Player2, or Enemy
+        if (collision.gameObject.CompareTag("Player1") || 
+            collision.gameObject.CompareTag("Player2") || 
+            collision.gameObject.CompareTag("Enemy"))
         {
             // Calculate the relative velocity
             float collisionForce = collision.relativeVelocity.magnitude;

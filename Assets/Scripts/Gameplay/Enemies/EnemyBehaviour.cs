@@ -7,7 +7,7 @@ public class EnemyBehavior : MonoBehaviour
     private Rigidbody rb;            // Rigidbody component
 
     public System.Action OnEnemyDestroyed; // Delegate to notify spawner
-    private string lastTouchedBy;          // Tracks the tag of the last collider
+    private bool touchedByPlayer1 = false; // Tracks if Player1 has touched this enemy
 
     private ScoreManager scoreManager;     // Reference to ScoreManager
 
@@ -30,18 +30,10 @@ public class EnemyBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Track the last object that touched the enemy
+        // Check if Player1 has touched the enemy
         if (collision.gameObject.CompareTag("Player1"))
         {
-            lastTouchedBy = "Player1";
-        }
-        else if (collision.gameObject.CompareTag("Enemy"))
-        {
-            lastTouchedBy = "Enemy";
-        }
-        else
-        {
-            lastTouchedBy = "Other";
+            touchedByPlayer1 = true;
         }
     }
 
@@ -50,9 +42,9 @@ public class EnemyBehavior : MonoBehaviour
         // Destroy if the enemy falls into the water
         if (other.CompareTag("Water"))
         {
-            if (lastTouchedBy == "Player1")
+            if (touchedByPlayer1)
             {
-                scoreManager.AddScore(1); // Increment score only if Player1 was the last to touch it
+                scoreManager.AddScore(1); // Increment score if Player1 has touched this enemy
             }
             OnEnemyDestroyed?.Invoke();
             Destroy(gameObject);

@@ -5,6 +5,9 @@ using System.Collections;
 public class CountdownManager : MonoBehaviour
 {
     public TextMeshProUGUI countdownText; // Drag your TextMeshPro UI element here
+    public TimerManager timerManager;    // Reference to the TimerManager
+    public EnemySpawner enemySpawner;   // Reference to the EnemySpawner
+
     public float countdownDuration = 3f; // Duration of the countdown
 
     private bool gameStarted = false; // Tracks if the game has started
@@ -35,8 +38,20 @@ public class CountdownManager : MonoBehaviour
         // Clear the countdown text
         countdownText.text = "";
 
-        // Unfreeze the game
+        // Unfreeze the game and start necessary components
         Time.timeScale = 1f;
         gameStarted = true;
+
+        // Start the timer and delay enemy spawning
+        if (timerManager != null)
+        {
+            timerManager.StartTimer();
+        }
+
+        if (enemySpawner != null)
+        {
+            yield return new WaitForSeconds(3f); // Delay enemy spawning by 3 seconds
+            enemySpawner.StartSpawning();
+        }
     }
 }

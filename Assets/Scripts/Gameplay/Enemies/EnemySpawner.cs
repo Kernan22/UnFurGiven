@@ -1,47 +1,51 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject[] enemyPrefabs; // Array of enemy prefabs
     public Transform[] spawnPoints;  // Array of spawn points
-    public float spawnInterval = 5f; // Time between enemy spawns
+    public float spawnInterval = 5f; // Time interval between spawns
+    public int maxEnemies = 10;      // Maximum number of enemies on the map
 
-    private bool canSpawn = false;   // Control when spawning starts
+    private List<GameObject> activeEnemies = new List<GameObject>();
+    private bool isSpawning = false; // Flag to control spawning
 
-    void Start()
+    public void StartSpawning()
     {
-        StartCoroutine(StartSpawningAfterDelay());
-    }
-
-    private IEnumerator StartSpawningAfterDelay()
-    {
-        // Wait for the countdown to finish (replace with the CountdownManager duration if needed)
-        yield return new WaitForSeconds(3f + 3f); // 3-second countdown + 3-second delay after "GO!"
-
-        // Enable spawning
-        canSpawn = true;
-
-        // Begin spawning loop
-        StartCoroutine(SpawnEnemies());
+        if (!isSpawning)
+        {
+            isSpawning = true;
+            StartCoroutine(SpawnEnemies());
+        }
     }
 
     private IEnumerator SpawnEnemies()
     {
-        while (canSpawn)
+        while (true)
         {
-            SpawnEnemy();
-            yield return new WaitForSeconds(spawnInterval); // Wait for the next spawn
+            if (activeEnemies.Count < maxEnemies)
+            {
+                SpawnEnemy();
+            }
+            yield return new WaitForSeconds(spawnInterval);
         }
     }
 
     private void SpawnEnemy()
     {
-        // Randomly select a spawn point and an enemy prefab
+        // Choose a random spawn point
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+
+        // Choose a random enemy prefab
         GameObject enemyPrefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
 
-        // Instantiate the enemy
-        Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
+        // Instantiate the enemy and add it to the active list
+        GameObject enemy = Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
+        activeEnemies.Add(enemy);
+
+        // Remove the enemy from the active list when destroyed
+        enemy.GetComponent<EnemyBehavior>().OnEnemyDestroyed += () => activeEnemies.Remove(enemy);
     }
 }

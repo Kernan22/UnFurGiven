@@ -377,6 +377,7 @@
 "Assets/Scripts/UI/PvP/GameTimer.cs"
 "Assets/Scripts/UI/SinglePlayer/CountdownManager.cs"
 "Assets/Scripts/UI/SinglePlayer/ScoreManager.cs"
+"Assets/Scripts/UI/SinglePlayer/TimeManager.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

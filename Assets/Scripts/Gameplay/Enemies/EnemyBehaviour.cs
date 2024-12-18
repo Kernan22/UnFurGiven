@@ -7,11 +7,15 @@ public class EnemyBehavior : MonoBehaviour
     private Rigidbody rb;            // Rigidbody component
 
     public System.Action OnEnemyDestroyed; // Delegate to notify spawner
+    private string lastTouchedBy;          // Tracks the tag of the last collider
+
+    private ScoreManager scoreManager;     // Reference to ScoreManager
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        player = GameObject.FindGameObjectWithTag("Player1")?.transform;
+        player = GameObject.FindGameObjectWithTag("Player1").transform;
+        scoreManager = FindObjectOfType<ScoreManager>(); // Locate the ScoreManager
     }
 
     void FixedUpdate()
@@ -26,28 +30,30 @@ public class EnemyBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Rigidbody otherRb = collision.rigidbody;
-
-        // Ensure the colliding object has a Rigidbody
-        if (otherRb != null)
+        // Track the last object that touched the enemy
+        if (collision.gameObject.CompareTag("Player1"))
         {
-            Vector3 relativeVelocity = rb.velocity - otherRb.velocity;
-
-            if (collision.gameObject.CompareTag("Player1") || collision.gameObject.CompareTag("Enemy"))
-            {
-                // Calculate bounce force based on relative velocity and direction
-                Vector3 bounceForce = relativeVelocity.normalized * relativeVelocity.magnitude * 2f; // Adjust multiplier as needed
-                rb.AddForce(-bounceForce, ForceMode.Impulse);
-                otherRb.AddForce(bounceForce, ForceMode.Impulse);
-            }
+            lastTouchedBy = "Player1";
+        }
+        else if (collision.gameObject.CompareTag("Enemy"))
+        {
+            lastTouchedBy = "Enemy";
+        }
+        else
+        {
+            lastTouchedBy = "Other";
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        // Destroy if the enemy falls off the level
+        // Destroy if the enemy falls into the water
         if (other.CompareTag("Water"))
         {
+            if (lastTouchedBy == "Player1")
+            {
+                scoreManager.AddScore(1); // Increment score only if Player1 was the last to touch it
+            }
             OnEnemyDestroyed?.Invoke();
             Destroy(gameObject);
         }

@@ -8,14 +8,14 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        // Load the main game scene 
+        // Load the main game scene
         SceneManager.LoadScene("Level1");
     }
 
-    public void OpenOptions()
+    public void StartSinglePlayer()
     {
-        // Display options UI (TBA)
-        Debug.Log("Options Menu Opened");
+        // Load the single-player mode scene
+        SceneManager.LoadScene("SinglePlayer");
     }
 
     public void OpenControls()

@@ -18632,7 +18632,7 @@ IL_00b5:
 		int32_t L_38 = L_37;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_39 = (L_36)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_38));
 		bool L_40;
-		L_40 = VirtualFuncInvoker0< bool >::Invoke(8, L_39);
+		L_40 = VirtualFuncInvoker0< bool >::Invoke(10, L_39);
 		if (L_40)
 		{
 			goto IL_0120;
@@ -20083,7 +20083,7 @@ IL_0033:
 		V_0 = L_16;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_17 = V_0;
 		bool L_18;
-		L_18 = VirtualFuncInvoker0< bool >::Invoke(8, L_17);
+		L_18 = VirtualFuncInvoker0< bool >::Invoke(10, L_17);
 		if (L_18)
 		{
 			goto IL_00a0;

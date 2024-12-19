@@ -1068,6 +1068,7 @@ GameObject:
   - component: {fileID: 376253885}
   - component: {fileID: 376253886}
   - component: {fileID: 376253887}
+  - component: {fileID: 376253888}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1145,6 +1146,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 1968376626}
+--- !u!114 &376253888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376253882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d6f756f52b8e44e8c42f000e0cf6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerupPrefab: {fileID: 5879411261164149534, guid: 011afc998b67a9b41a32c200940a9ed9, type: 3}
+  spawnPlanes:
+  - {fileID: 975629085}
+  - {fileID: 1626651741}
+  - {fileID: 1651616002}
+  - {fileID: 1578115836}
+  spawnInterval: 30
 --- !u!1 &403338047 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e27e7ddeaaf185245920dc5a880d0e50, type: 3}
@@ -1286,7 +1306,7 @@ MonoBehaviour:
   m_text: Game Over!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: f2dcf029949142e28b974630369c8b4e, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: d75b8f41e959450c84ac6e967084d3e1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5824,7 +5844,7 @@ MonoBehaviour:
   - {fileID: 308945144}
   - {fileID: 888516510}
   - {fileID: 1515094243}
-  spawnInterval: 5
+  spawnInterval: 2
   maxEnemies: 10
 --- !u!1 &1515094242
 GameObject:
@@ -7224,8 +7244,10 @@ MonoBehaviour:
   jumpForce: 5
   cameraTransform: {fileID: 1433774982}
   powerupScaleMultiplier: 1.5
-  powerupMassMultiplier: 2
-  powerupDuration: 5
+  powerupMassMultiplier: 3
+  powerupJumpMultiplier: 3
+  powerupSpeedMultiplier: 2.5
+  powerupDuration: 10
   powerupSound: {fileID: 8300000, guid: 0eb1726f21eb84340b629035ac48c796, type: 3}
   powerupSoundVolume: 0.8
   collisionSound: {fileID: 8300000, guid: fde731e32342dec449b6a8c6f6db1b8f, type: 3}
@@ -7242,6 +7264,7 @@ MonoBehaviour:
   rockEffectPrefab: {fileID: 141433446842962269, guid: 9fe8f8b3288e45a44af36ff8aa04486e, type: 3}
   groundEffectPrefab: {fileID: 3432958286849152088, guid: 87ee7299dd44ed747af24dbb91bcd33b, type: 3}
   waterSplashEffectPrefab: {fileID: 8205706795460263314, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!114 &1864343798
 MonoBehaviour:
   m_ObjectHideFlags: 0

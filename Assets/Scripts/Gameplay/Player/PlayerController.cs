@@ -20,7 +20,9 @@ public class PlayerController : MonoBehaviour
     // Power-up settings
     public float powerupScaleMultiplier = 1.5f;
     public float powerupMassMultiplier = 2f;
-    public float powerupDuration = 5f;
+    public float powerupJumpMultiplier = 1.5f; // Additional jump multiplier for power-up
+    public float powerupSpeedMultiplier = 2f; // Additional speed multiplier for power-up
+    public float powerupDuration = 10f; // Duration of the power-up effect
     public AudioClip powerupSound;
     [Range(0f, 1f)] public float powerupSoundVolume = 0.7f;
 
@@ -46,13 +48,15 @@ public class PlayerController : MonoBehaviour
     public GameObject waterSplashEffectPrefab;
 
     private AudioSource audioSource;
-    private Vector3 originalScale;
+    public Vector3 originalScale;
     private float originalMass;
+    private float originalJumpForce;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         currentSpeed = baseSpeed;
+        originalJumpForce = jumpForce;
 
         originalScale = transform.localScale;
         originalMass = rb.mass;
@@ -154,16 +158,25 @@ public class PlayerController : MonoBehaviour
 
     private void ApplyPowerup()
     {
+        // Store original stats
         transform.localScale = originalScale * powerupScaleMultiplier;
         rb.mass = originalMass * powerupMassMultiplier;
-        currentSpeed = baseSpeed;
+        currentSpeed = baseSpeed * powerupSpeedMultiplier;
+        jumpForce = originalJumpForce * powerupJumpMultiplier;
+
+        // Start timer to remove power-up effects
+        StartCoroutine(RemovePowerupAfterDelay());
     }
 
-    private void RemovePowerup()
+    private IEnumerator RemovePowerupAfterDelay()
     {
+        yield return new WaitForSeconds(powerupDuration);
+
+        // Reset to original stats
         transform.localScale = originalScale;
         rb.mass = originalMass;
         currentSpeed = baseSpeed;
+        jumpForce = originalJumpForce;
     }
 
     private void PlayCollisionSound()

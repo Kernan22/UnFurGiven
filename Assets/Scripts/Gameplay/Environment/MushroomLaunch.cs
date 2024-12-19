@@ -24,8 +24,19 @@ public class MushroomLaunch : MonoBehaviour
         Rigidbody rb = other.GetComponent<Rigidbody>();
         if (rb != null)
         {
+            // Check if the object is the player and adjust the launch force if scaled
+            Transform playerTransform = other.transform;
+            PlayerController playerController = other.GetComponent<PlayerController>();
+
+            float adjustedLaunchForce = launchForce;
+            if (playerController != null)
+            {
+                float scaleFactor = playerTransform.localScale.y / playerController.originalScale.y; // Account for power-up scale
+                adjustedLaunchForce *= scaleFactor; // Adjust force based on player's scale
+            }
+
             // Apply upward force to the player's Rigidbody
-            rb.AddForce(Vector3.up * launchForce, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * adjustedLaunchForce, ForceMode.Impulse);
 
             // Play the sound
             if (audioSource != null && launchSound != null)

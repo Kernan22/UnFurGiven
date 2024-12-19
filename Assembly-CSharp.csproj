@@ -95,6 +95,7 @@
     <Compile Include="Assets\InputActions\InputActions.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Free Assets\RainMaker\Demo\DemoScript.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Environment\SinglePlayerPowerup.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Environment\MushroomLaunch.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Scripts\UI\PvP\BackgroundMusicController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Environment\Powerup.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Player\HedgehogOrientation.cs" />
     <Compile Include="Assets\Scripts\UI\SinglePlayer\WaterCollision.cs" />

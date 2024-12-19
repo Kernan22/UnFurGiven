@@ -358,6 +358,7 @@
 "Assets/Free Assets/RainMaker/Prefab/RainScript.cs"
 "Assets/Free Assets/RainMaker/Prefab/RainScript2D.cs"
 "Assets/InputActions/InputActions.cs"
+"Assets/Scripts/Gameplay/Enemies/BossSpawner.cs"
 "Assets/Scripts/Gameplay/Enemies/EnemyBehaviour.cs"
 "Assets/Scripts/Gameplay/Enemies/EnemySpawner.cs"
 "Assets/Scripts/Gameplay/Environment/CampfireHazard.cs"

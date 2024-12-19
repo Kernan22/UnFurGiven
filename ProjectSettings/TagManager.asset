@@ -12,6 +12,7 @@ TagManager:
   - Rock
   - Water
   - Enemy
+  - Boss
   layers:
   - Default
   - TransparentFX

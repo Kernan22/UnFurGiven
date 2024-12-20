@@ -7125,6 +7125,8 @@ GameObject:
   - component: {fileID: 1864343797}
   - component: {fileID: 1864343799}
   - component: {fileID: 1864343802}
+  - component: {fileID: 1864343804}
+  - component: {fileID: 1864343803}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player1
@@ -7310,7 +7312,19 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 6178beb37ef9bef42b16bd92b72bfd88, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 5c22e5dc-40c3-4ada-9e42-98426c790602
     m_ActionName: Player1/Move[/DualSenseGamepadHID/leftStick,/SwitchProControllerHID/leftStick]
   - m_PersistentCalls:
@@ -7333,8 +7347,8 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: c5045917-3213-440c-a2cf-5d4e2a9acc65
     m_ActionName: Player2/Jump[/DualSenseGamepadHID/buttonSouth,/SwitchProControllerHID/buttonSouth]
-  m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: Gamepad
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
   m_DefaultActionMap: Player1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -7364,6 +7378,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24af0c198c23356469acd0a88e0202f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1864343803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864343791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3732635a8e222484295f955f8f5b5352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  freeLookCamera: {fileID: 428954747}
+--- !u!114 &1864343804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864343791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6178beb37ef9bef42b16bd92b72bfd88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  cameraTransform: {fileID: 1433774982}
 --- !u!1 &1967701184 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f056cc990abac564bb152d1b603231b4, type: 3}

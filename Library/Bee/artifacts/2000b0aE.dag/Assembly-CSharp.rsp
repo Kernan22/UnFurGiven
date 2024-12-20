@@ -372,6 +372,8 @@
 "Assets/Scripts/Gameplay/Player/HedgehogOrientation.cs"
 "Assets/Scripts/Gameplay/Player/PlayerController.cs"
 "Assets/Scripts/Gameplay/Player/RabbitOrientation.cs"
+"Assets/Scripts/Gameplay/Player/SinglePlayer/PlayerMovementInput.cs"
+"Assets/Scripts/Gameplay/Player/SinglePlayer/SingelplayerCamera.cs"
 "Assets/Scripts/UI/Menu/MainMenu.cs"
 "Assets/Scripts/UI/Menu/MainMenuController.cs"
 "Assets/Scripts/UI/PvP/BackgroundMusicController.cs"

@@ -113,6 +113,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Player\HedgehogOrientation.cs" />
     <Compile Include="Assets\Scripts\UI\SinglePlayer\WaterCollision.cs" />
+    <Compile Include="Assets\Scripts\UI\SinglePlayer\PowerupDropper.cs" />
     <Compile Include="Assets\Scripts\UI\SinglePlayer\GameEndManager.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Player\BallCollisionEffect.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />

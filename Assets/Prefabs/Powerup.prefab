@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -5730366082768658514}
   - component: {fileID: 7198817380221745360}
   - component: {fileID: 6011712418550843625}
+  - component: {fileID: 6047841520952771756}
   m_Layer: 0
   m_Name: Powerup
   m_TagString: Powerup
@@ -130,11 +131,11 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &7198817380221745360
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -154,7 +155,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: c8e9a715daac24048a124a1f8e3487fa, type: 3}
 --- !u!114 &6011712418550843625
@@ -169,3 +170,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab8fb6346b99e642bd58f7e1f163548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6047841520952771756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5879411261164149534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc5187c9f8a1964db62797bf5c84661, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropDistance: 1
+  dropDuration: 1

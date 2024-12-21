@@ -3502,6 +3502,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Renderer_SetMaterial();
 		Register_UnityEngine_Renderer_SetMaterial();
 
+		//System.Void UnityEngine.Renderer::get_bounds_Injected(UnityEngine.Bounds&)
+		void Register_UnityEngine_Renderer_get_bounds_Injected();
+		Register_UnityEngine_Renderer_get_bounds_Injected();
+
 		//System.Void UnityEngine.Renderer::set_enabled(System.Boolean)
 		void Register_UnityEngine_Renderer_set_enabled();
 		Register_UnityEngine_Renderer_set_enabled();
@@ -3873,6 +3877,14 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Rigidbody::AddForce_Injected(UnityEngine.Vector3&,UnityEngine.ForceMode)
 		void Register_UnityEngine_Rigidbody_AddForce_Injected();
 		Register_UnityEngine_Rigidbody_AddForce_Injected();
+
+		//System.Void UnityEngine.Rigidbody::MovePosition_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_Rigidbody_MovePosition_Injected();
+		Register_UnityEngine_Rigidbody_MovePosition_Injected();
+
+		//System.Void UnityEngine.Rigidbody::get_position_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_Rigidbody_get_position_Injected();
+		Register_UnityEngine_Rigidbody_get_position_Injected();
 
 		//System.Void UnityEngine.Rigidbody::get_velocity_Injected(UnityEngine.Vector3&)
 		void Register_UnityEngine_Rigidbody_get_velocity_Injected();

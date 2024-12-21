@@ -1,42 +1,41 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameEndManager : MonoBehaviour
 {
-    public GameObject gameOverPanel; // Assign the Game Over panel in the inspector
-
-    void Start()
-    {
-        // Ensure the Game Over panel is hidden at the start
-        if (gameOverPanel != null)
-        {
-            gameOverPanel.SetActive(false);
-        }
-    }
+    public GameObject gameOverPanel; // Reference to the game over panel
+    public AudioSource backgroundMusic; // Reference to the background music AudioSource
 
     public void TriggerGameOver()
     {
-        // Show the Game Over panel
+        // Stop the music when the game is over
+        if (backgroundMusic != null && backgroundMusic.isPlaying)
+        {
+            backgroundMusic.Stop();
+        }
+
+        // Display the game over panel
         if (gameOverPanel != null)
         {
             gameOverPanel.SetActive(true);
-
-            // Optional: Freeze the game
-            Time.timeScale = 0f;
         }
+
+        // Pause the game
+        Time.timeScale = 0f;
     }
 
-    // Restart the game by reloading the current scene
     public void RestartGame()
     {
-        Time.timeScale = 1f; // Unfreeze the game
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload the current scene
+        // Resume the game
+        Time.timeScale = 1f;
+
+        // Reload the current scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 
-    // Go to the main menu by loading the MainMenu scene
-    public void GoToMainMenu()
+    public void QuitToMainMenu()
     {
-        Time.timeScale = 1f; // Unfreeze the game
-        SceneManager.LoadScene("MainMenu"); // Replace "MainMenu" with your main menu scene name
+        // Resume the game and load the main menu scene
+        Time.timeScale = 1f;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
 }

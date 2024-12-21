@@ -1,57 +1,70 @@
 using UnityEngine;
-using TMPro; // Import TextMeshPro namespace
-using System.Collections;
+using TMPro;
 
 public class CountdownManager : MonoBehaviour
 {
-    public TextMeshProUGUI countdownText; // Drag your TextMeshPro UI element here
-    public TimerManager timerManager;    // Reference to the TimerManager
-    public EnemySpawner enemySpawner;   // Reference to the EnemySpawner
-
+    public TextMeshProUGUI countdownText; // Text for displaying the countdown
     public float countdownDuration = 3f; // Duration of the countdown
+    public EnemySpawner enemySpawner; // Reference to the EnemySpawner script
+    public TimerManager timerManager; // Reference to the TimerManager script
+    public AudioSource backgroundMusic; // Reference to the AudioSource for music
 
-    private bool gameStarted = false; // Tracks if the game has started
+    private bool musicStarted = false; // Ensure music starts only once
 
-    void Start()
+    private void Start()
     {
-        // Freeze game at the start
+        // Ensure music does not start playing immediately
+        if (backgroundMusic != null && backgroundMusic.isPlaying)
+        {
+            backgroundMusic.Stop(); // Stop music if it was set to play on Awake
+        }
+
+        // Freeze the game at the start
         Time.timeScale = 0f;
+
+        // Start the countdown
         StartCoroutine(CountdownCoroutine());
     }
 
-    private IEnumerator CountdownCoroutine()
+    private System.Collections.IEnumerator CountdownCoroutine()
     {
-        // Count down from the specified duration to 0
         float countdown = countdownDuration;
 
+        // Display countdown
         while (countdown > 0)
         {
-            countdownText.text = Mathf.Ceil(countdown).ToString(); // Update the TextMeshPro UI
+            countdownText.text = Mathf.Ceil(countdown).ToString();
             yield return new WaitForSecondsRealtime(1f); // Wait 1 second (unaffected by Time.timeScale)
             countdown--;
         }
 
         // Display "GO!" at the end
         countdownText.text = "GO!";
-        yield return new WaitForSecondsRealtime(1f); // Show "GO!" for 1 second
+        yield return new WaitForSecondsRealtime(1f);
 
-        // Clear the countdown text
+        // Clear the text
         countdownText.text = "";
 
-        // Unfreeze the game and start necessary components
+        // Unfreeze the game
         Time.timeScale = 1f;
-        gameStarted = true;
 
-        // Start the timer and delay enemy spawning
+        // Enable the enemy spawning logic
+        if (enemySpawner != null)
+        {
+            enemySpawner.InvokeRepeating(nameof(enemySpawner.SpawnEnemy), 0f, 2f); // Start spawning enemies
+        }
+
+        // Start the timer
         if (timerManager != null)
         {
             timerManager.StartTimer();
         }
 
-        if (enemySpawner != null)
+        // Start background music if not already playing
+        if (backgroundMusic != null && !musicStarted)
         {
-            yield return new WaitForSeconds(3f); // Delay enemy spawning by 3 seconds
-            enemySpawner.StartSpawning();
+            backgroundMusic.Play();
+            musicStarted = true; // Mark music as started
         }
     }
 }

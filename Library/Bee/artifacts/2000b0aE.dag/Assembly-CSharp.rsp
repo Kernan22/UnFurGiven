@@ -382,6 +382,7 @@
 "Assets/Scripts/UI/PvP/GameTimer.cs"
 "Assets/Scripts/UI/SinglePlayer/CountdownManager.cs"
 "Assets/Scripts/UI/SinglePlayer/GameEndManager.cs"
+"Assets/Scripts/UI/SinglePlayer/PowerupDropper.cs"
 "Assets/Scripts/UI/SinglePlayer/ScoreManager.cs"
 "Assets/Scripts/UI/SinglePlayer/TimeManager.cs"
 "Assets/Scripts/UI/SinglePlayer/WaterCollision.cs"

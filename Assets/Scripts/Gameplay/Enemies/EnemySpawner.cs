@@ -33,7 +33,7 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    private void SpawnEnemy()
+    public void SpawnEnemy()
     {
         // Choose a random spawn point
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];

@@ -1,25 +1,23 @@
 using UnityEngine;
 
+
 public class WaterCollision : MonoBehaviour
 {
-    private GameEndManager gameEndManager; // Reference to the GameEndManager script
+    private GameEndManager gameEndManager;
 
-    void Start()
+    private void Start()
     {
-        // Find and assign the GameEndManager
         gameEndManager = FindObjectOfType<GameEndManager>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        // Check if Player1 fell into the water
-        if (other.CompareTag("Player1"))
+        if (other.CompareTag("Player1")) // Check if the player falls into the water
         {
-            // Trigger the game over logic
-            gameEndManager.TriggerGameOver();
-
-            // Optional: Destroy the player object or deactivate it
-            Destroy(other.gameObject);
+            if (gameEndManager != null)
+            {
+                gameEndManager.TriggerGameOver();
+            }
         }
     }
 }

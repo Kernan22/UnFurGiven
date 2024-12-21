@@ -119,7 +119,8 @@
           {
             "name": "AudioSource",
             "scenes": [
-              "Assets/Scenes/MainMenu.unity"
+              "Assets/Scenes/MainMenu.unity",
+              "Assets/Scenes/Singleplayer.unity"
             ],
             "dependencyType": 0,
             "icon": null

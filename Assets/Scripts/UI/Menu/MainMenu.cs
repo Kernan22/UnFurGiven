@@ -1,40 +1,49 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+// Handles Main Menu navigation, including starting the game, switching between menu screens, and quitting the application.
+
 public class MainMenu : MonoBehaviour
 {
-    public GameObject mainMenuCanvas; // Assign the Main Menu canvas in the Inspector
-    public GameObject controlsCanvas; // Assign the Controls canvas in the Inspector
-
+    [Header("Menu Canvases")]
+    public GameObject mainMenuCanvas;  // Reference to the main menu UI canvas
+    public GameObject controlsCanvas;  // Reference to the controls/settings UI canvas
+    
+    // Starts the main game by loading the specified scene.
+  
     public void StartGame()
     {
-        // Load the main game scene
+        // Load the default main game level (Level1)
         SceneManager.LoadScene("Level1");
     }
 
+   
+    // Starts the single-player mode by loading the SinglePlayer scene.
+  
     public void StartSinglePlayer()
     {
-        // Load the single-player mode scene
         SceneManager.LoadScene("SinglePlayer");
     }
-
+    
+    // Opens the controls/settings screen by enabling the controls canvas
     public void OpenControls()
     {
-        // Switch to the Controls canvas
         mainMenuCanvas.SetActive(false);
         controlsCanvas.SetActive(true);
     }
-
+    
+    // Returns to the main menu by disabling the controls canvas
+    
     public void BackToMainMenu()
     {
-        // Switch back to the Main Menu canvas
         controlsCanvas.SetActive(false);
         mainMenuCanvas.SetActive(true);
     }
-
+    
+    // Quits the game when the Quit button is pressed.
     public void QuitGame()
     {
-        // Quit the application
         Debug.Log("Game Quit");
         Application.Quit();
     }

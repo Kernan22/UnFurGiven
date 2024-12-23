@@ -1,89 +1,108 @@
 using UnityEngine;
 using System.Collections;
 
+/// Handles the spawning of power-ups at random positions on designated planes & ensures power-ups spawn at intervals and prevents overlapping spawns.
+
 public class SinglePlayerPowerup : MonoBehaviour
 {
-    public GameObject powerupPrefab; // Assign the Powerup prefab in the Inspector
-    public Transform[] spawnPlanes;  // Assign the planes for powerup spawning
-    public float spawnInterval = 30f; // 30 seconds interval for spawning
+    [Header("Power-up Settings")]
+    public GameObject powerupPrefab;     // Power-up prefab to spawn
+    public Transform[] spawnPlanes;      // Planes where power-ups will spawn
+    public float spawnInterval = 30f;    // Interval between spawns (in seconds)
 
-    private GameObject currentPowerup;  // Tracks the current powerup in the scene
-    private bool isPowerupActive = false;  // Tracks if the player is powered up
+    private GameObject currentPowerup;   // Tracks the active power-up
+    private bool isPowerupActive = false; // Tracks if the player currently has a power-up
 
     void Start()
     {
         StartCoroutine(SpawnPowerupRoutine());
     }
 
+   
+    // Coroutine that spawns power-ups at regular intervals.
     private IEnumerator SpawnPowerupRoutine()
     {
-        yield return new WaitForSeconds(spawnInterval);
+        yield return new WaitForSeconds(spawnInterval);  // Initial delay before first spawn
 
         while (true)
         {
-            // Only spawn if no powerup exists and player isn't powered up
+            // Spawn only if no powerup exists and the player isn't powered up
             if (currentPowerup == null && !isPowerupActive)
             {
                 SpawnPowerup();
             }
 
-            yield return new WaitForSeconds(spawnInterval);
+            yield return new WaitForSeconds(spawnInterval);  // Wait for the next spawn interval
         }
     }
 
+   
+    // Spawns a power-up on a random plane.
     private void SpawnPowerup()
     {
+        // Select a random plane from the array
         Transform randomPlane = spawnPlanes[Random.Range(0, spawnPlanes.Length)];
+        
+        // Calculate the spawn position on the plane
         Vector3 spawnPosition = GetRandomPointInPlane(randomPlane);
 
-        // Instantiate the powerup at the calculated position
+        // Instantiate the power-up at the calculated position
         currentPowerup = Instantiate(powerupPrefab, spawnPosition, Quaternion.identity);
 
-        // Attach a listener to handle when the powerup is picked up
+        // Attach event listener to detect when power-up is picked up
         Powerup powerupScript = currentPowerup.GetComponent<Powerup>();
         if (powerupScript != null)
         {
             powerupScript.OnPickedUp += HandlePowerupPickedUp;
         }
     }
-
+    
+    // Calculates a random spawn point on the selected plane & Raycasts to ensure the power-up spawns on top of the plane.
+  
     private Vector3 GetRandomPointInPlane(Transform plane)
     {
+        // Ensure the plane has a Renderer to calculate bounds
         Renderer planeRenderer = plane.GetComponent<Renderer>();
         if (planeRenderer == null)
         {
             Debug.LogError($"Plane {plane.name} is missing a Renderer component.");
-            return plane.position;
+            return plane.position;  // Fallback to plane center
         }
 
+        // Get plane bounds
         Bounds bounds = planeRenderer.bounds;
         float randomX = Random.Range(bounds.min.x, bounds.max.x);
         float randomZ = Random.Range(bounds.min.z, bounds.max.z);
 
-        Vector3 spawnPosition = new Vector3(randomX, bounds.max.y + 5f, randomZ); // Spawn slightly above the plane
+        // Start the spawn slightly above the plane
+        Vector3 spawnPosition = new Vector3(randomX, bounds.max.y + 5f, randomZ);
 
-        // Raycast downward to ensure it spawns on top of the plane
-        RaycastHit hit;
-        if (Physics.Raycast(spawnPosition, Vector3.down, out hit, 10f))
+        // Raycast down to find the plane surface
+        if (Physics.Raycast(spawnPosition, Vector3.down, out RaycastHit hit, 10f))
         {
-            return hit.point + Vector3.up * 0.5f;  // Slight offset to avoid clipping
+            return hit.point + Vector3.up * 0.5f;  // Spawn slightly above the hit point to prevent clipping
         }
 
-        // Fallback if raycast fails
+        // Fallback if raycast fails (spawns at center height of the plane)
         Debug.LogWarning("Raycast failed, spawning at default plane height.");
-        return new Vector3(randomX, bounds.center.y + 0.5f, randomZ);  // Default to center height with slight offset
+        return new Vector3(randomX, bounds.center.y + 0.5f, randomZ);
     }
 
+  
+    // Prevents new power-ups from spawning during the active power-up duration.
     private void HandlePowerupPickedUp()
     {
         isPowerupActive = true;
-        currentPowerup = null;
+        currentPowerup = null;  // Clear reference to the power-up
+
+        // Start cooldown to allow spawning after power-up duration
         StartCoroutine(PowerupCooldown());
     }
-
+    
+    // Cooldown routine that resets the power-up state after 10 seconds.
     private IEnumerator PowerupCooldown()
     {
-        yield return new WaitForSeconds(10f);  // Power-up duration of 10 seconds
+        yield return new WaitForSeconds(10f);  // Duration of power-up
         isPowerupActive = false;
     }
 }

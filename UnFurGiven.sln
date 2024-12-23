@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFXRDemo", "CFXRDemo.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{788d6b2a-b952-5665-ce19-b678d8e75958}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{47e624f4-1f3f-8558-cead-4c64b9faf6ae}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFXRRuntime", "CFXRRuntime.csproj", "{db47f779-ee78-22f5-31b6-4f48eddd2681}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro.Demo.Editor", "ToonyColorsPro.Demo.Editor.csproj", "{1c7a3760-b5e7-4c9d-a7c9-36ca9a5e3386}"
@@ -28,8 +26,6 @@ Global
 		{bcdb9b06-9a1d-7a00-db44-b619706be143}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{788d6b2a-b952-5665-ce19-b678d8e75958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{788d6b2a-b952-5665-ce19-b678d8e75958}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{47e624f4-1f3f-8558-cead-4c64b9faf6ae}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{47e624f4-1f3f-8558-cead-4c64b9faf6ae}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{db47f779-ee78-22f5-31b6-4f48eddd2681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{db47f779-ee78-22f5-31b6-4f48eddd2681}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1c7a3760-b5e7-4c9d-a7c9-36ca9a5e3386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

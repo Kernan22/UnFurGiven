@@ -7,60 +7,613 @@
     <list default="true" id="9cce4f8d-1736-41cc-8cde-f39ddb8099d6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnFurGiven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnFurGiven/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Control Scheme.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Control Scheme.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Powerup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Powerup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Mesh.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Mesh/rope_bridge.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Mesh/rope_bridge.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Metarials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Metarials/Rope.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Metarials/Rope.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Metarials/Wood1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Metarials/Wood1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Metarials/Wood2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Metarials/Wood2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Prefab/rope_bridge.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Prefab/rope_bridge.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Scene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Scene/DemoScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/Blue Polygon/Rope Bridge 3D/Scene/DemoScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_Standard.unitypackage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_Standard.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Grass-1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Grass-1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Grass-2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Grass-2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ocean.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ocean.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-6.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-6.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-7.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-7.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-8.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-8.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-9.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-9.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-6.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-6.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Skybox_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Skybox_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes/DemoScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes/DemoScene/DemoScene.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes/DemoScene/DemoScene.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes/Environments.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes/Environments/Meshes.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes/Environments/Meshes.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Land.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Land.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Mask.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/SkyColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/SkyColor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/DemoScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/DemoScene/DemoScene.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/DemoScene/DemoScene.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Bridge_A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Bridge_A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Bridge_B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Bridge_B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_B1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_B1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_B2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_B2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_C1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_C1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_C2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_C2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_D1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_D1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_D2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_D2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_E1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_E1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_E2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_E2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_F.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_F.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_G1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_G1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_G2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_G2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_H.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_H.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ocean.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ocean.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_10.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_10.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_11.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_11.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_12.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_12.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_13.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_13.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_14.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_14.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_15.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_15.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_16.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_16.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_7.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_7.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_8.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_8.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_9.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_9.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Stone_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Stone_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Stone_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Stone_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Stone_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Stone_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tip_Board_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tip_Board_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tip_Board_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tip_Board_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tip_Board_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tip_Board_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tree_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tree_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tree_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tree_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tree_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tree_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/DemoScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/DemoScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/DemoScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/DemoScene/Global Volume Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/DemoScene/Global Volume Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/TimeLine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/TimeLine/TimeLine.playable" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/TimeLine/TimeLine.playable.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scripts/SimpleCameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scripts/SimpleCameraController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/ForwardRenderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/ForwardRenderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-HighQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-HighQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-LowQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-LowQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-MediumQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-MediumQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/POLY STYLE - Platformer Starter Pack/Readme.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Background.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Background.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoScene2D.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoScene2D.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoScene2DSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoScene2DSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoSceneSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoSceneSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoSceneSimple.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoSceneSimple.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoSceneSimple3D.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoSceneSimple3D.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoSceneSimple3DSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoSceneSimple3DSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoSceneSimpleSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoSceneSimpleSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoScript2D.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoScript2D.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoScriptStartRainOnSpaceBar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/DemoScriptStartRainOnSpaceBar.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/FlashlightCookie.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/FlashlightCookie.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/GrayMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/GrayMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/NatureLandscape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/NatureLandscape.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/New Terrain.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/New Terrain.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/PhysicsMaterialBall.physicsMaterial2D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/PhysicsMaterialBall.physicsMaterial2D.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/PhysicsMaterialGround.physicsMaterial2D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/PhysicsMaterialGround.physicsMaterial2D.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/BillboardTextures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassFrond01AlbedoAlpha.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassFrond01AlbedoAlpha.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassFrond02AlbedoAlpha.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassFrond02AlbedoAlpha.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures/CliffAlbedoSpecular.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures/CliffAlbedoSpecular.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassHillAlbedo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassHillAlbedo.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassRockyAlbedo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassRockyAlbedo.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyAlbedoSpecular.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyAlbedoSpecular.bmp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyNormals.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyNormals.bmp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures/SandAlbedo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures/SandAlbedo.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Editor/RainMakerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Editor/RainMakerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Editor/RainMakerLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Editor/RainMakerLogo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/BaseRainScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/BaseRainScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainCollision.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainCollision.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainExplosionMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainExplosionMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainExplosionMaterial2D.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainExplosionMaterial2D.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainMaterial2D.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainMaterial2D.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainMistMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainMistMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainMistMaterial2D.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainMistMaterial2D.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainPrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainPrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainPrefab2D.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainPrefab2D.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainScript2D.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainScript2D.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainShader.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainShader.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainTexture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainTexture.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainTexturePSD.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/RainTexturePSD.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/rain_heavy.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/rain_heavy.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/rain_light.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/rain_light.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/rain_medium.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/rain_medium.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/wind_normal1.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Prefab/wind_normal1.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Assets/RainMaker/Readme.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputActions/InputActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/InputActions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputActions/InputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/InputActions.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Singleplayer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Singleplayer.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Enemies/BossSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Enemies/BossSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Enemies/EnemyBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Enemies/EnemyBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Enemies/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Enemies/EnemySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Environment/CampfireHazard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Environment/CampfireHazard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Environment/MushroomLaunch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Environment/MushroomLaunch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Environment/Powerup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Environment/Powerup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Environment/PowerupSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Environment/PowerupSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Environment/SinglePlayerPowerup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Environment/SinglePlayerPowerup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/BallBounceController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/BallBounceController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/BallCollisionEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/BallCollisionEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/HedgehogOrientation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/HedgehogOrientation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/RabbitOrientation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/RabbitOrientation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/SinglePlayer/PlayerMovementInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/SinglePlayer/PlayerMovementInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/SinglePlayer/SingelplayerCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/SinglePlayer/SingelplayerCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Menu/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Menu/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Menu/MainMenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Menu/MainMenuController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Menu/ToolTipImageHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Menu/ToolTipImageHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PvP/BackgroundMusicController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PvP/BackgroundMusicController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PvP/CountdownTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PvP/CountdownTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PvP/GameOverManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PvP/GameOverManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PvP/GameTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PvP/GameTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SinglePlayer/CountdownManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SinglePlayer/CountdownManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SinglePlayer/GameEndManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SinglePlayer/GameEndManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SinglePlayer/PowerupDropper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SinglePlayer/PowerupDropper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SinglePlayer/ScoreManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SinglePlayer/ScoreManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SinglePlayer/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SinglePlayer/TimeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SinglePlayer/WaterCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SinglePlayer/WaterCollision.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0b/0b6254e6d8955219f05d97dd7efd3217" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/13/13a6ae4146ebe0856472b8950cd0d782" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2d/2dafbab4ca2abe7f1f2c941e865bf790" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3f/3f9858c3d7f84eda32edf895550fde34" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/43/438a648ffff2efc0fd9c6544c01d9b44" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5f/5f0e88426f97f54ffea589d282809680" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/73/735c2f0cfcd862f1230906197b56ec82" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/74/742eaa575abed0c137e178692940d250" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/76/76bcf50d9ac4044bb16db85194e99273" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7b/7b0408d5d23898423264cb92d89b33fd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/87/87547d396de35e1bc17bcaa666012c4e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/90/90869667d5c08b2733ee3f7ccddc6a15" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9c/9c1dc7db27b45403bc24282fa06323e6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9c/9c5680376daf34d68f0e340d1a81719f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a2/a2f8aeddcc760d3cf0d4f60ae085c6de" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a8/a8c7e51dd77b9c5d00d49f7180e818be" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ab/ab8de8641c76f65efbceba7f80b0eb08" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b2/b2d2363190b5c57248315b0ffb7fdb1a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/bd/bdc91bbb7d2f117b2a03839aa11e2362" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d6/d645d1f2a602baac20b4b9676e946454" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e0/e0ab5a39eb24102de9e2656c57803303" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ef/ef746e737d63eb10508e7dab1950561b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f0/f09ba652a49c5712de2cffaf7fd41423" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f4/f40ae0c4f05eb59e3b98d74f1e3a07e7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f7/f71ab584da573a1a522863c56f7c656f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fc/fc8baba01a0039950c4ad31d20c3b8f6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fd/fdc5711c1e3eff699d9132854b7133ae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB-lock" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB-lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/06/061785732a063db758c7578c1d30ff38" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/13/13639530eb8ffcf24b2dac451279627e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/24/245a0f9097de888a8b85f37ce3767c53" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/28/288f3446010a622ed7f74e79bc09532d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2d/2d6455176dfa03efa83c210fd12f82b5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3a/3a750deb172c037b33edf11d2128ed3a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3b/3bf210afe14e5b5072f8cd6fde2ad8e2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/45/4588732ad4a9d32d53e0d7c86b34a6ae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/53/53e18c2431f676b9dc29a1b44f94f804" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/54/54f2ee6cf295ac309bf270fb2a2f2087" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/58/58158f36aa0a4e2f43e82b4d04afd0c9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/63/63f62b269f60ba0475c0d2fd5c8b8d91" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7f/7fa61abb09bf84794eb30cd26ddd419d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8e/8e13254ea563931bd4a20221133e8252" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9e/9e1002271bf1080f8080cb4fcaed326c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b2/b2b37ceb3dc91ebc99cce6e2a0db5d0f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c1/c102e66d5dc6eeef5e085798d558e3af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ca/cabef578db10c4fac3400ea9ba649cb9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cc/ccedecf944685deebc80479ccbd5249b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d0/d0121796ecaf8988cdfdc5820cb5f6e3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d1/d17ff8fd2bebba1a76caba821e369592" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d3/d35766d40241281470fdc3abb9afa195" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d7/d7193ad3e3e1ea24bd34545cf33bc230" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e3/e3b8cdc53a66a8536209557979844078" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e9/e98aa710859eda0b3175a776fc740b8d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/2000b0aE-inputdata.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/2000b0aE-inputdata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/2000b0aE.dag" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/2000b0aE.dag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/2000b0aE.dag.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/2000b0aE.dag.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/2000b0aE.dag.outputdata" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/2000b0aE.dag.outputdata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/2000b0aE.dag.payloads" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/2000b0aE.dag.payloads" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/2000b0aE.dag_derived" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/2000b0aE.dag_derived" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/2000b0aP.dag_fsmtime" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/2000b0aP.dag_fsmtime" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state.map" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp-Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp-Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp-Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp-Editor.UnityAdditionalFile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp-Editor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp-Editor.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp-Editor.ref.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp-Editor.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp-Editor.rsp2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.ref.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.ref.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/boot.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/webgl.data" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/webgl.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/webgl.data.unmarked" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/webgl.data.unmarked" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXR.WelcomeScreen.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXR.WelcomeScreen.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXR.WelcomeScreen.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXR.WelcomeScreen.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXRDemo.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXRDemo.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXRDemo.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXRDemo.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXREditor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXREditor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXREditor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXREditor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXRRuntime.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXRRuntime.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXRRuntime.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/CFXRRuntime.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Cinemachine.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Cinemachine.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Cinemachine.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Cinemachine.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/KinoBloom.Runtime.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/KinoBloom.Runtime.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/KinoBloom.Runtime.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/KinoBloom.Runtime.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/ToonyColorsPro.Demo.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/ToonyColorsPro.Demo.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/ToonyColorsPro.Demo.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/ToonyColorsPro.Demo.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.CollabProxy.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.CollabProxy.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.CollabProxy.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.CollabProxy.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.EditorCoroutines.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.EditorCoroutines.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.EditorCoroutines.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.EditorCoroutines.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.ForUI.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.ForUI.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.ForUI.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.ForUI.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.TestFramework.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.TestFramework.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.TestFramework.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.TestFramework.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InternalAPIEditorBridgeDev.001.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InternalAPIEditorBridgeDev.001.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InternalAPIEditorBridgeDev.001.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.InternalAPIEditorBridgeDev.001.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.PlasticSCM.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.PlasticSCM.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.PlasticSCM.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.PlasticSCM.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Play.Publisher.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Play.Publisher.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Play.Publisher.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Play.Publisher.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Postprocessing.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Postprocessing.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Postprocessing.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Postprocessing.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Postprocessing.Runtime.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Postprocessing.Runtime.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Postprocessing.Runtime.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Postprocessing.Runtime.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Rider.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Rider.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Rider.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Rider.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Settings.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Settings.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Settings.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Settings.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TestTools.CodeCoverage.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TestTools.CodeCoverage.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TestTools.CodeCoverage.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TestTools.CodeCoverage.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Timeline.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Timeline.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Timeline.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Timeline.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Timeline.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Timeline.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Timeline.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.Timeline.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VSCode.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VSCode.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VSCode.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VSCode.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Core.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Core.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Core.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Core.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Core.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Core.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Core.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Core.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Flow.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Flow.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Flow.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Flow.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Flow.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Flow.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Flow.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Flow.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Shared.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Shared.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Shared.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.Shared.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.State.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.State.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.State.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.State.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.State.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.State.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.State.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualScripting.State.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualStudio.Editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualStudio.Editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualStudio.Editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/Unity.VisualStudio.Editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEditor.TestRunner.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEditor.TestRunner.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEditor.TestRunner.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEditor.TestRunner.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/com.unity.cinemachine.editor.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/com.unity.cinemachine.editor.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/com.unity.cinemachine.editor.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aE.dag/com.unity.cinemachine.editor.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Assembly-CSharp.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Assembly-CSharp.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Assembly-CSharp.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Assembly-CSharp.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/CFXRDemo.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/CFXRDemo.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/CFXRDemo.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/CFXRDemo.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/CFXRRuntime.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/CFXRRuntime.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/CFXRRuntime.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/CFXRRuntime.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Cinemachine.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Cinemachine.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Cinemachine.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Cinemachine.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/KinoBloom.Runtime.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/KinoBloom.Runtime.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/KinoBloom.Runtime.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/KinoBloom.Runtime.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.InputSystem.ForUI.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.InputSystem.ForUI.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.InputSystem.ForUI.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.InputSystem.ForUI.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.InputSystem.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.InputSystem.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.InputSystem.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.InputSystem.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.Postprocessing.Runtime.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.Postprocessing.Runtime.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.Postprocessing.Runtime.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.Postprocessing.Runtime.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.TextMeshPro.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.TextMeshPro.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.TextMeshPro.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.TextMeshPro.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.Timeline.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.Timeline.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.Timeline.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.Timeline.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.Core.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.Core.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.Core.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.Core.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.Flow.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.Flow.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.Flow.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.Flow.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.State.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.State.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.State.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.State.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/UnityEngine.TestRunner.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/UnityEngine.TestRunner.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/UnityEngine.TestRunner.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/UnityEngine.TestRunner.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/UnityEngine.UI.dll.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/UnityEngine.UI.dll.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/UnityEngine.UI.dll.mvfrm.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/2000b0aP.dag/UnityEngine.UI.dll.mvfrm.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/ManagedStripped/UnityLinkerToEditorData.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/ManagedStripped/UnityLinkerToEditorData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/ManagedStripped/analytics.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/ManagedStripped/analytics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/2akw7ebsvpaw0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/2akw7ebsvpaw0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/2g7g35odl62x0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/2g7g35odl62x0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/2j31iaumx8ia0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/2j31iaumx8ia0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/2ykdtq9k8eew0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/2ykdtq9k8eew0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/2ykdtq9k8eew1.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/2ykdtq9k8eew1.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/3firzz1ilesi0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/3firzz1ilesi0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/5i0znjhytlyv0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/5i0znjhytlyv0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/5i0znjhytlyv1.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/5i0znjhytlyv1.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/5i0znjhytlyv2.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/5i0znjhytlyv2.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/5i0znjhytlyv3.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/5i0znjhytlyv3.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/63rha7sezq9o0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/63rha7sezq9o0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/6f4ufqcxxg7d0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/6f4ufqcxxg7d0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/6li7eosybnw50.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/6li7eosybnw50.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/6li7eosybnw51.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/6li7eosybnw51.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/6li7eosybnw52.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/6li7eosybnw52.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/81oih5nzi9jx0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/81oih5nzi9jx0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8aftofp0mp6t0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8aftofp0mp6t0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8xm9wdfabh1a0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8xm9wdfabh1a0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8xm9wdfabh1a1.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8xm9wdfabh1a1.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8xm9wdfabh1a2.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8xm9wdfabh1a2.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8xm9wdfabh1a3.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8xm9wdfabh1a3.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8xm9wdfabh1a4.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8xm9wdfabh1a4.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8xm9wdfabh1a5.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8xm9wdfabh1a5.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8xm9wdfabh1a6.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/8xm9wdfabh1a6.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/9r9etamvajkj0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/9r9etamvajkj0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/aoflam8558oq0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/aoflam8558oq0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/au3pq26u7wfp0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/au3pq26u7wfp0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/d46v9ktzjt6c0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/d46v9ktzjt6c0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/dger70n84iex0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/dger70n84iex0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/hxhn0y83ykon0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/hxhn0y83ykon0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/jr5dfm7yatvg0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/jr5dfm7yatvg0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/jr5dfm7yatvg1.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/jr5dfm7yatvg1.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/jr5dfm7yatvg2.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/jr5dfm7yatvg2.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/jr5dfm7yatvg3.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/jr5dfm7yatvg3.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/kyfwjeabj4f10.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/kyfwjeabj4f10.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/kyfwjeabj4f11.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/kyfwjeabj4f11.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/kyfwjeabj4f12.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/kyfwjeabj4f12.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/nvacbcd6l6xi0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/nvacbcd6l6xi0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/o46nvsvo7p3g0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/o46nvsvo7p3g0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/o46nvsvo7p3g1.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/o46nvsvo7p3g1.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/o46nvsvo7p3g2.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/o46nvsvo7p3g2.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/p1qv1ay9leex0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/p1qv1ay9leex0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/pbppthmsnutk0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/pbppthmsnutk0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/pbppthmsnutk1.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/pbppthmsnutk1.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/pbppthmsnutk2.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/pbppthmsnutk2.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/qmwhyce43whq0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/qmwhyce43whq0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/v5uhmb2qe1060.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/v5uhmb2qe1060.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/w71vf7hu4ypq0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/w71vf7hu4ypq0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/w71vf7hu4ypq1.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/w71vf7hu4ypq1.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/wnqstorpuggl0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/wnqstorpuggl0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/x2bjvg3vhfcn0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/x2bjvg3vhfcn0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xbanvo9ghn5h0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xbanvo9ghn5h0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xbanvo9ghn5h1.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xbanvo9ghn5h1.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xen7cfc1a5tx0.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xen7cfc1a5tx0.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xen7cfc1a5tx1.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xen7cfc1a5tx1.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xen7cfc1a5tx2.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xen7cfc1a5tx2.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xen7cfc1a5tx3.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xen7cfc1a5tx3.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xen7cfc1a5tx4.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xen7cfc1a5tx4.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xt3ii9kls0x20.lump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xt3ii9kls0x20.lump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cppOutput/UnityClassRegistration.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cppOutput/UnityClassRegistration.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cppOutput/UnityICallRegistration.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cppOutput/UnityICallRegistration.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cppOutput/cpp/Symbols/MethodMap.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cppOutput/cpp/Symbols/MethodMap.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cppOutput/cpp/analytics.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/WebGL/il2cppOutput/cpp/analytics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/il2cpp_conv_mkj1.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/il2cpp_conv_mkj1.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/Unity.InternalAPIEditorBridgeDev.001.ref.dll_51D023F1F870353D.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/Unity.InternalAPIEditorBridgeDev.001.ref.dll_51D023F1F870353D.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.CoreModule.dll_AE3A5D88CD558C9F.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.CoreModule.dll_AE3A5D88CD558C9F.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.EditorToolbarModule.dll_5E3DD9BB670FF3E2.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEditor.EditorToolbarModule.dll_5E3DD9BB670FF3E2.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_49D2ABB888237D13.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_49D2ABB888237D13.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_785BE9EAFFF52B57.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_785BE9EAFFF52B57.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_2FB5197C88F8DE9D.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_2FB5197C88F8DE9D.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_5993DB10395A4099.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_5993DB10395A4099.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_2327A51C5992D68E.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_2327A51C5992D68E.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_D15B30DB755AF7CA.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_D15B30DB755AF7CA.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_6431B8224CE09158.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_6431B8224CE09158.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_6CF5080EF9DD5094.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_6CF5080EF9DD5094.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_E5E30EA074D0D375.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_E5E30EA074D0D375.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_FB23B135332C8CF1.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_FB23B135332C8CF1.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_41CC4F5DB97E73EE.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_41CC4F5DB97E73EE.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_D8B5B212B8056E6A.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_D8B5B212B8056E6A.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_139EFF08500A76C6.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_139EFF08500A76C6.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_DACAC9F7400F470A.mvfrm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_DACAC9F7400F470A.mvfrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/unitylinker_ber2.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/unitylinker_ber2.traceevents" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/backend1.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/backend1.traceevents" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/backend2.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/backend2.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/backend3.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/backend3.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/backend4.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/backend4.traceevents" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/buildprogram0.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/buildprogram0.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/buildprogram1.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/buildprogram1.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/buildprogram2.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/buildprogram2.traceevents" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/buildreport.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/buildreport.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/buildreport.json_0.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/buildreport.json_0.traceevents" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/buildreport.json_1.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/buildreport.json_1.traceevents" afterDir="false" />
@@ -68,22 +621,26 @@
       <change beforePath="$PROJECT_DIR$/Library/Bee/fullprofile.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/fullprofile.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/tundra.digestcache" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/tundra.digestcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/tundra.log.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/tundra.log.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/LastBuild.buildreport" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastBuild.buildreport" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/BuildPlayerData/Editor/TypeDb-All.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/BuildPlayerData/Editor/TypeDb-All.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/BuildPlayerData/Player/RuntimeInitializeOnLoads.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/BuildPlayerData/Player/RuntimeInitializeOnLoads.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/BuildPlayerData/Player/TypeDb-All.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/BuildPlayerData/Player/TypeDb-All.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/WebGL/Data/data.unity3d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/WebGL/Data/data.unity3d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/WebGL/DataBuildDirtyInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/WebGL/DataBuildDirtyInfo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PackageManager/ProjectCache" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageManager/ProjectCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.md5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/WebGL/Data/RuntimeInitializeOnLoads.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/WebGL/Data/RuntimeInitializeOnLoads.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/WebGL/ScriptsOnlyCache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/WebGL/ScriptsOnlyCache.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Search/transactions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Search/transactions.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache.db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB-lock" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB-lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SplashScreenCache/dc/dc623cf0ed2b090f563ed55c1eaaf50e" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/f0/f03edde78fac000b6787b209d4726b66.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/f0/f03edde78fac000b6787b209d4726b66.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/67/67aed9ce556c25f842507e58fe332337.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/67/67aed9ce556c25f842507e58fe332337.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEngine.InputSystem.Editor.InputActionsEditorWindow.pref" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEngine.InputSystem.Editor.InputActionsEditorWindow.pref" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ilpp.pid" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ilpp.pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
@@ -92,10 +649,17 @@
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnFurGiven.sln" beforeDir="false" afterPath="$PROJECT_DIR$/UnFurGiven.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebGL Builds/Build/WebGL Builds.data.gz" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Builds/Build/WebGL Builds.data.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebGL Builds/GUID.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Builds/GUID.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connectwebgl.zip" beforeDir="false" afterPath="$PROJECT_DIR$/connectwebgl.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/dependencies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Builds/dependencies.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/CFXR.WelcomeScreen.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CFXR.WelcomeScreen.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/CFXRDemo.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CFXRDemo.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/CFXREditor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CFXREditor.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/CFXRRuntime.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/CFXRRuntime.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/KinoBloom.Runtime.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/KinoBloom.Runtime.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/ToonyColorsPro.Demo.Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ToonyColorsPro.Demo.Editor.csproj.AssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -418,6 +982,19 @@
       <workItem from="1734815693541" duration="107000" />
       <workItem from="1734816603379" duration="72000" />
       <workItem from="1734960208462" duration="151000" />
+      <workItem from="1734966969430" duration="2180000" />
+      <workItem from="1734969242605" duration="38000" />
+      <workItem from="1734969820903" duration="571000" />
+      <workItem from="1734970497896" duration="1080000" />
+      <workItem from="1734971716872" duration="20000" />
+      <workItem from="1734971801395" duration="1097000" />
+      <workItem from="1734972924740" duration="256000" />
+      <workItem from="1734973201010" duration="1355000" />
+      <workItem from="1734974588415" duration="472000" />
+      <workItem from="1734975084115" duration="645000" />
+      <workItem from="1734975755843" duration="832000" />
+      <workItem from="1734977074322" duration="18000" />
+      <workItem from="1734977112072" duration="603000" />
     </task>
     <servers />
   </component>

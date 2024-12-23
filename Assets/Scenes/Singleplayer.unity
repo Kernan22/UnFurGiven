@@ -1444,7 +1444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -150}
+  m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: 236.1, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &420809126
@@ -2006,7 +2006,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537997121}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2218976, y: 0.20632541, z: -0.04810283, w: 0.95177597}
+  m_LocalRotation: {x: 0.22209796, y: 0.20232002, z: -0.047169007, w: 0.9526354}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7579,7 +7579,19 @@ MonoBehaviour:
     m_ActionId: 5c22e5dc-40c3-4ada-9e42-98426c790602
     m_ActionName: Player1/Move[/DualSenseGamepadHID/leftStick,/SwitchProControllerHID/leftStick]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 3732635a8e222484295f955f8f5b5352, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 04d90771-d8f0-4884-a029-0bfccab23313
     m_ActionName: Player1/Look[/DualSenseGamepadHID/rightStick,/SwitchProControllerHID/rightStick]
   - m_PersistentCalls:
@@ -7737,7 +7749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1968376627
 MonoBehaviour:
   m_ObjectHideFlags: 0

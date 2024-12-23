@@ -3,51 +3,62 @@ using TMPro;
 
 public class BossSpawner : MonoBehaviour
 {
-    public TextMeshProUGUI scoreText; // Assign your score TextMeshPro element in the Inspector
-    public GameObject bossPrefab;    // Assign the Boss prefab
-    public Transform[] spawnPoints; // Array of possible spawn points for the boss
+    [Header("UI & Prefab References")]
+    public TextMeshProUGUI scoreText;  // Reference to the score TextMeshPro UI element
+    public GameObject bossPrefab;      // Reference to the Boss prefab for instantiation
 
-    private int lastBossSpawnScore = 0; // Tracks the score when the last boss spawned
+    [Header("Spawn Settings")]
+    public Transform[] spawnPoints;    // Potential boss spawn points
+
+    private int lastBossSpawnScore = 0; // Score tracker
 
     void Update()
     {
         int currentScore = 0;
 
-        // Safely parse the score, assuming the text might include a label (e.g., "Score: 15")
+        
         if (int.TryParse(System.Text.RegularExpressions.Regex.Match(scoreText.text, @"\d+").Value, out currentScore))
         {
-            // Check if the score is a multiple of 15 and ensure it's not a repeat spawn
+            // Spawn boss if score is a multiple of 15, and ensure it spawns only once per every 15 kills
             if (currentScore >= 15 && currentScore % 15 == 0 && currentScore != lastBossSpawnScore)
             {
                 SpawnBoss();
-                lastBossSpawnScore = currentScore; // Update the last spawn score
+                lastBossSpawnScore = currentScore; // Update the last spawn score to avoid re-triggering
             }
         }
         else
         {
-            Debug.LogWarning("Score text is not in a valid format.");
+            Debug.LogWarning("Score text is not in a valid format. Ensure the score is displayed as an integer.");
         }
     }
 
+    // Boss Spawn
     private void SpawnBoss()
     {
-        // Choose the closest spawn point to the player or any other logic
         Transform spawnPoint = FindClosestSpawnPointToPlayer();
+
         if (spawnPoint != null)
         {
             Instantiate(bossPrefab, spawnPoint.position, Quaternion.identity);
-            Debug.Log("Boss Spawned!");
+            Debug.Log("Boss Spawned at: " + spawnPoint.position);
+        }
+        else
+        {
+            Debug.LogWarning("No valid spawn point found for the boss.");
         }
     }
 
+    
+    // Finds the spawn point nearest to the player.
     private Transform FindClosestSpawnPointToPlayer()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player1");
+        GameObject player = GameObject.FindGameObjectWithTag("Player1");  // Locate player by tag
         if (player == null) return null;
 
         Transform closest = null;
         float closestDistance = float.MaxValue;
 
+        // Loop through all spawn points to determine the closest one
         foreach (Transform spawnPoint in spawnPoints)
         {
             float distance = Vector3.Distance(spawnPoint.position, player.transform.position);

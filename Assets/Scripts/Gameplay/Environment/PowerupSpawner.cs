@@ -1,32 +1,33 @@
 using System.Collections;
 using UnityEngine;
 
+/// Handles the spawning of power-ups at random locations within a defined spawn plane, ensures only one power-up is active at a time.
 public class PowerupSpawner : MonoBehaviour
 {
-    public GameObject powerupPrefab; // Reference to the power-up prefab
-    public GameObject spawnPlane; // Reference to the power-up spawn plane
-    public AudioClip spawnSound; // Sound effect for power-up spawn
-    private AudioSource audioSource;
+    [Header("Power-Up Settings")]
+    public GameObject powerupPrefab;  // Power-up prefab to spawn
+    public GameObject spawnPlane;     // Plane where power-ups will spawn
+    public AudioClip spawnSound;      // Sound effect for spawning power-up
 
-    private GameObject currentPowerup; // Tracks the currently active power-up
-    private bool isSpawning = false; // Prevents overlapping spawns
+    private AudioSource audioSource;  // Audio source to play sound
+    private GameObject currentPowerup; // Reference to the currently active power-up
+    private bool isSpawning = false;   // Flag to prevent overlapping spawns
 
     private void Start()
     {
-        // Power up Audio
+        // Setup audio source for power-up spawn sound
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
 
-        // Configure the AudioSource
-        audioSource.volume = 0.7f; 
-        audioSource.playOnAwake = false; 
+        audioSource.volume = 0.7f;  // Default volume for spawn sound
+        audioSource.playOnAwake = false;
 
-        StartSpawning(); // Start spawning at the beginning
+        StartSpawning();  // Start the power-up spawning routine
     }
-
+    
     public void StartSpawning()
     {
         if (!isSpawning)
@@ -35,32 +36,40 @@ public class PowerupSpawner : MonoBehaviour
         }
     }
 
+   
     private IEnumerator SpawnPowerupRoutine()
     {
         isSpawning = true;
 
-        // Wait for 10 seconds before spawning
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(10f);  // Wait 10 seconds before spawning
 
         if (currentPowerup == null)
         {
             SpawnPowerup();
         }
 
-        isSpawning = false; // Allow spawning for the next round
+        isSpawning = false;  // Allow future spawns
     }
-
+    
     private void SpawnPowerup()
     {
+        // Get the collider of the spawn plane
         Collider planeCollider = spawnPlane.GetComponent<Collider>();
+        if (planeCollider == null)
+        {
+            Debug.LogError("Spawn plane does not have a collider!");
+            return;
+        }
+
+        // Calculate a random position within the plane's bounds
         Vector3 spawnPosition = GetRandomPointInBounds(planeCollider.bounds);
 
         Debug.Log("Spawning power-up at position: " + spawnPosition);
 
-        // Spawn the power-up and track it
+        // Instantiate the power-up and track the instance
         currentPowerup = Instantiate(powerupPrefab, spawnPosition, Quaternion.identity);
 
-        // Play the spawn sound
+        // Play spawn sound if available
         if (audioSource != null && spawnSound != null)
         {
             audioSource.PlayOneShot(spawnSound);
@@ -70,23 +79,23 @@ public class PowerupSpawner : MonoBehaviour
             Debug.LogWarning("AudioSource or spawnSound is missing!");
         }
     }
-
+    
     public void ResetSpawner()
     {
-        // Destroy the current power-up if it exists
+        // Remove the existing power-up when picked up
         if (currentPowerup != null)
         {
             Destroy(currentPowerup);
         }
 
-        // Restart spawning logic for the next round
+        // Restart the spawn cycle
         StartSpawning();
     }
-
+    
     private Vector3 GetRandomPointInBounds(Bounds bounds)
     {
         float x = Random.Range(bounds.min.x, bounds.max.x);
-        float y = bounds.center.y; 
+        float y = bounds.center.y;  // Keep power-up at plane height
         float z = Random.Range(bounds.min.z, bounds.max.z);
         return new Vector3(x, y, z);
     }

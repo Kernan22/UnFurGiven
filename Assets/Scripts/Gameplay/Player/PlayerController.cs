@@ -20,9 +20,9 @@ public class PlayerController : MonoBehaviour
     // Power-up settings
     public float powerupScaleMultiplier = 1.5f;
     public float powerupMassMultiplier = 2f;
-    public float powerupJumpMultiplier = 1.5f; // Additional jump multiplier for power-up
-    public float powerupSpeedMultiplier = 2f; // Additional speed multiplier for power-up
-    public float powerupDuration = 10f; // Duration of the power-up effect
+    public float powerupJumpMultiplier = 1.5f;
+    public float powerupSpeedMultiplier = 2f;
+    public float powerupDuration = 10f;
     public AudioClip powerupSound;
     [Range(0f, 1f)] public float powerupSoundVolume = 0.7f;
 
@@ -158,13 +158,11 @@ public class PlayerController : MonoBehaviour
 
     private void ApplyPowerup()
     {
-        // Store original stats
         transform.localScale = originalScale * powerupScaleMultiplier;
         rb.mass = originalMass * powerupMassMultiplier;
         currentSpeed = baseSpeed * powerupSpeedMultiplier;
         jumpForce = originalJumpForce * powerupJumpMultiplier;
 
-        // Start timer to remove power-up effects
         StartCoroutine(RemovePowerupAfterDelay());
     }
 
@@ -172,7 +170,6 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(powerupDuration);
 
-        // Reset to original stats
         transform.localScale = originalScale;
         rb.mass = originalMass;
         currentSpeed = baseSpeed;
@@ -200,6 +197,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Ensure ApplySpeedModifier remains public and untouched
     public void ApplySpeedModifier(float multiplier, float duration)
     {
         if (!isSlowed)

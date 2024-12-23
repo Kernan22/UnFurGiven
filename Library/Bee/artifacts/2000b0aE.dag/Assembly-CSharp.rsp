@@ -376,6 +376,7 @@
 "Assets/Scripts/Gameplay/Player/SinglePlayer/SingelplayerCamera.cs"
 "Assets/Scripts/UI/Menu/MainMenu.cs"
 "Assets/Scripts/UI/Menu/MainMenuController.cs"
+"Assets/Scripts/UI/Menu/ToolTipImageHandler.cs"
 "Assets/Scripts/UI/PvP/BackgroundMusicController.cs"
 "Assets/Scripts/UI/PvP/CountdownTimer.cs"
 "Assets/Scripts/UI/PvP/GameOverManager.cs"
